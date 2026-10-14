@@ -1,0 +1,96 @@
+{
+  "firm": "Example Firm",
+  "scope": "example-firm",
+  "scenario": "target",
+  "currency": "USD",
+  "minorUnitsPerMajor": 100,
+  "periodUnit": "month",
+  "goalProfitMinorPerMonth": 2000000,
+  "goalSourceRef": "synthetic-goal",
+  "ownerHoursPerMonth": 25,
+  "ownerHoursLimitPerMonth": 20,
+  "workloadCoverage": "complete",
+  "financial": {
+    "scope": "example-firm",
+    "sourceRef": "synthetic-financial-model",
+    "basis": "accrual",
+    "fixedCostMinorPerMonth": 1000000,
+    "otherIncomeMinorPerMonth": 0,
+    "segments": [
+      {
+        "id": "projects",
+        "scope": "example-firm",
+        "sourceRef": "synthetic-segment",
+        "unit": "accepted-project",
+        "monthlyUnits": 30,
+        "recognizedFeeMinorPerUnit": 150000,
+        "variableCostMinorPerUnit": 50000,
+        "workload": [
+          {
+            "resourceId": "review-team",
+            "resourceUnit": "hours",
+            "unitsPerPlanningUnit": 3,
+            "sourceRef": "synthetic-time-sample"
+          }
+        ]
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "review-team",
+      "scope": "example-firm",
+      "sourceRef": "synthetic-schedule",
+      "capacityUnit": "hours",
+      "netAvailableUnitsPerMonth": 100,
+      "otherCommittedUnitsPerMonth": 20
+    }
+  ],
+  "flows": [
+    {
+      "id": "acquisition",
+      "scope": "example-firm",
+      "sourceRef": "synthetic-cohort",
+      "targetOutputPerMonth": 30,
+      "transitions": [
+        {
+          "id": "qualify",
+          "inputUnit": "lead",
+          "outputUnit": "qualified-lead",
+          "passRate": 0.5,
+          "sourceRef": "synthetic-rate-a"
+        },
+        {
+          "id": "retain",
+          "inputUnit": "qualified-lead",
+          "outputUnit": "accepted-project",
+          "passRate": 0.3,
+          "sourceRef": "synthetic-rate-b"
+        }
+      ]
+    }
+  ],
+  "cash": {
+    "scope": "example-firm",
+    "sourceRef": "synthetic-cash-model",
+    "openingCashMinor": 2000000,
+    "minimumReserveMinor": 1000000,
+    "upfrontOutlayMinor": 500000,
+    "months": [
+      {
+        "period": "2027-01",
+        "collectionsMinor": 0,
+        "approvedFinancingMinor": 0,
+        "outflowsMinor": 1000000,
+        "sourceRef": "synthetic-cash-jan"
+      },
+      {
+        "period": "2027-02",
+        "collectionsMinor": 3000000,
+        "approvedFinancingMinor": 0,
+        "outflowsMinor": 1000000,
+        "sourceRef": "synthetic-cash-feb"
+      }
+    ]
+  }
+}

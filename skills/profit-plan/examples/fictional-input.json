@@ -1,0 +1,103 @@
+{
+  "scope": "example-firm",
+  "currency": "USD",
+  "monthly": {
+    "scope": "example-firm",
+    "sourceRef": "synthetic-pnl",
+    "period": "2026-08",
+    "basis": "accrual",
+    "revenueCents": 50000000,
+    "otherIncomeCents": 1000000,
+    "expensesCents": 35000000,
+    "reportedNetIncomeCents": 16000000,
+    "targetProfitCents": 20000000,
+    "goalSourceRef": "synthetic-goal",
+    "closeEvidenceRef": "synthetic-reconciliation"
+  },
+  "cohort": {
+    "scope": "example-firm",
+    "sourceRef": "synthetic-census",
+    "signedMonth": "2025-01",
+    "asOfDate": "2026-08-31",
+    "censusCoverage": "complete",
+    "feeCoverage": "complete",
+    "feeLedgerRef": "synthetic-fee-ledger",
+    "cases": [
+      {
+        "caseId": "case-a",
+        "scope": "example-firm",
+        "sourceRef": "synthetic-case-a",
+        "signedDate": "2025-01-05",
+        "status": "settled"
+      },
+      {
+        "caseId": "case-b",
+        "scope": "example-firm",
+        "sourceRef": "synthetic-case-b",
+        "signedDate": "2025-01-10",
+        "status": "lost"
+      }
+    ],
+    "fees": [
+      {
+        "receiptLineId": "receipt-a",
+        "caseId": "case-a",
+        "scope": "example-firm",
+        "sourceRef": "synthetic-receipt",
+        "kind": "firm-fee",
+        "status": "cleared",
+        "receivedDate": "2026-07-01",
+        "amountCents": 1000000
+      }
+    ],
+    "costs": [
+      {
+        "costLineId": "cost-a",
+        "scope": "example-firm",
+        "sourceRef": "synthetic-cost-a",
+        "kind": "acquisition",
+        "amountCents": 200000,
+        "incurredDate": "2025-01-01"
+      },
+      {
+        "costLineId": "cost-b",
+        "scope": "example-firm",
+        "sourceRef": "synthetic-cost-b",
+        "kind": "direct-service",
+        "amountCents": 100000,
+        "incurredDate": "2026-07-01"
+      },
+      {
+        "costLineId": "cost-c",
+        "scope": "example-firm",
+        "sourceRef": "synthetic-cost-c",
+        "kind": "allocated-overhead",
+        "amountCents": 50000,
+        "incurredDate": "2026-07-01",
+        "allocationRef": "synthetic-allocation"
+      }
+    ],
+    "costCoverage": {
+      "acquisition": "complete",
+      "direct-service": "complete",
+      "allocated-overhead": "complete"
+    },
+    "costLedgerRefs": {
+      "acquisition": "synthetic-acquisition-ledger",
+      "direct-service": "synthetic-service-ledger",
+      "allocated-overhead": "synthetic-overhead-ledger"
+    }
+  },
+  "scenarios": [
+    {
+      "id": "one-change",
+      "scope": "example-firm",
+      "sourceRef": "synthetic-mechanism",
+      "basis": "accrual",
+      "feeRevenueDeltaCents": 5000000,
+      "expenseDeltaCents": 1000000,
+      "realizationWindow": "per month after the evidenced ramp",
+      "assumptionsRef": "synthetic-assumptions"
+    }
+  ]
+}
