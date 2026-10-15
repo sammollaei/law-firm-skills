@@ -4,7 +4,7 @@ description: Read an email thread, complete the work the user has authorized beh
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # Email

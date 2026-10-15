@@ -108,6 +108,16 @@ Only profit-plan and scale-plan include executable helpers. They use Node.js
 built-ins, read a supplied JSON file, print calculations, and make no network
 calls or writes. Their examples are fictional, not business benchmarks.
 
+This plugin declares no MCP servers. With your authorization, workflows may use
+your host's existing tools to read sources, write workspace files, update connected
+systems, or send approved communications. Those tools and providers handle their
+own data; the collection has no author-operated data service. Local calculator
+helpers run in the host's permitted execution environment, outside MCP servers.
+
+[Privacy](https://sammollaei.github.io/law-firm-skills/privacy.html) |
+[Support](https://sammollaei.github.io/law-firm-skills/support.html) |
+[Terms](https://sammollaei.github.io/law-firm-skills/terms.html)
+
 ## Make it yours
 
 Keep your firm's goals, systems, working hours, owners, and permission rules in

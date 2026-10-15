@@ -1,6 +1,6 @@
 {
   "name": "law-firm-skills",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Practice-management workflows for lawyers and law firm owners: daily briefs, meeting actions, follow-ups, decisions, and staff playbooks.",
   "author": {
     "name": "Sam Mollaei",
@@ -13,5 +13,10 @@
     "law-firm",
     "lawyers",
     "practice-management"
-  ]
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/sammollaei/law-firm-skills/blob/main/docs/installation.md",
+  "supportUrl": "https://sammollaei.github.io/law-firm-skills/support.html",
+  "privacyPolicyUrl": "https://sammollaei.github.io/law-firm-skills/privacy.html",
+  "termsOfServiceUrl": "https://sammollaei.github.io/law-firm-skills/terms.html"
 }

@@ -4,7 +4,7 @@ description: Assess law firm team members against verified role expectations and
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # Evaluate team

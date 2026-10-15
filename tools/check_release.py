@@ -17,7 +17,7 @@ SKILLS = (
     "todoist", "blind-spot", "decide", "evaluate-team", "email", "profit-plan",
     "follow-up", "scale-plan", "playbook", "setup",
 )
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 ROOT_FILES = {"README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", ".gitignore",
               "plugin.json", "skills.sh.json", ".claude-plugin/plugin.json",
               ".claude-plugin/marketplace.json", ".agents/plugins/marketplace.json", "assets/icon.svg", "assets/icon.png"}
@@ -157,6 +157,11 @@ def check(root=ROOT):
             errors.append("plugin version or name mismatch")
         if marketplace["plugins"][0]["source"] != "./":
             errors.append("marketplace source must be this repository")
+        for field in ("documentationUrl", "supportUrl", "privacyPolicyUrl", "termsOfServiceUrl"):
+            if not isinstance(claude.get(field), str) or not claude[field].startswith("https://"):
+                errors.append(f"missing or invalid Claude directory link: {field}")
+        if claude.get("icon", "").removeprefix("./") not in expected:
+            errors.append("Claude directory icon must reference a packaged file")
         if len(interface["displayName"]) > 30 or len(interface["shortDescription"]) > 30:
             errors.append("plugin display name or subtitle exceeds directory limit")
         prompts = interface["defaultPrompt"]

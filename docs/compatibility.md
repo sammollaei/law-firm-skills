@@ -1,6 +1,6 @@
 # Compatibility and evidence
 
-Documentation and installation checks updated October 15, 2026. Current package: v0.2.0. A shared file format does not guarantee
+Documentation and installation checks updated October 15, 2026. Current package: v0.2.1. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
 
 | Host | Delivery route | Evidence for this release |
@@ -80,6 +80,21 @@ Installation passed. Consistent brevity, owner routing, and factual date display
 still need repeated evaluation before claims of broad workflow reliability.
 No end-to-end execution claim is made for the other 15 skills, live email/CRM
 integrations, Windows, mobile apps, or the other hosts listed above.
+
+## v0.2.1 directory metadata
+
+This patch adds Claude directory listing links, an icon reference, and clearer
+README disclosures. Skill workflow bodies and calculator code are unchanged
+from v0.2.0; only their version metadata changes. The existing release checker
+now requires the listing links and a packaged icon.
+
+Claude Code 2.1.278 installed v0.2.1 from a local marketplace in an isolated
+project, reported it enabled, and exposed all 79 skill payload files with exact
+byte matches. Removal preserved a separate fictional context file. Both native
+manifest checks passed with five expected directory-field warnings on that
+older CLI; its strict mode fails on those warnings. Claude's documentation says
+2.1.281 and later recognize these fields. The three reproducible export tests
+also passed. Model evaluations below were not rerun for this metadata patch.
 
 ## v0.2.0 plugin and model checks
 

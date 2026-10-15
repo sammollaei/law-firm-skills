@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "law-firm-skills",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Practice-management workflows for lawyers and law firm owners: daily briefs, meeting actions, follow-ups, decisions, and staff playbooks.",
   "author": {
     "name": "Sam Mollaei",

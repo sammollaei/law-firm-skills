@@ -69,8 +69,10 @@ scripts. Keep results outside this public source. The baseline comparison and
 LLM graders are useful signals, not certification or proof of live integration.
 Inspect traces to confirm actual skill selection, not just a plausible answer.
 
-Also validate both Claude manifests with `claude plugin validate --strict`,
-inspect the OpenAI package through native plugin discovery, and test install,
+Also validate both Claude manifests with `claude plugin validate --strict` using
+Claude Code 2.1.281 or later. Earlier versions warn about directory-only metadata
+fields while still loading the plugin. See the [manifest reference](https://code.claude.com/docs/en/plugins/manifest-reference#directory-listing-fields).
+Then inspect the OpenAI package through native plugin discovery, and test install,
 upgrade, and removal in disposable projects before wider distribution.
 
 Inspect the generated files, not only their source. Do not add credentials,

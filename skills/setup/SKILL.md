@@ -4,7 +4,7 @@ description: Help a lawyer, law firm owner, or practice manager get started with
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # Get started with Law Firm Skills
