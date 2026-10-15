@@ -5,14 +5,14 @@ identical tool access, permissions, model behavior, or task completion.
 
 | Host | Delivery route | Evidence for this release |
 |---|---|---|
-| Claude Code | Plugin marketplace or standalone skills | v2.1.278 installed the local v0.2.0 plugin in an isolated project; 17 components discovered. Native model evaluations and limits below. Public standalone v0.1.0 also tested. |
-| Codex | Standalone skills; plugin metadata | v0.155.1 discovered and read all 17 v0.2.0 plugin components without errors. Native plugin installation was not tested. Public standalone v0.1.0 installation and `$morning` execution passed the bounded checks below. |
+| Claude Code | Plugin marketplace or standalone skills | v2.1.278 installed the public v0.2.0 plugin in an isolated project; all 79 skill payload files matched. Native model evaluations and limits below. Public standalone v0.1.0 also tested. |
+| Codex | Standalone skills; plugin metadata | v0.155.1 discovered all 17 CLI-installed v0.2.0 skills without project loading errors, and read all 17 plugin components. Native plugin installation was not tested. Public standalone v0.1.0 installation and `$morning` execution passed the bounded checks below. |
 | Grok Bot | Save supplied workflow as a private skill | Official saved-skill workflow documented. Account installation and execution untested. |
 | Grok Build | Native skill directory | Official route documented; live discovery and execution untested. |
 | Cursor | Native skill directory | Official route documented; live discovery and execution untested. |
 | Gemini CLI | Native skill directory | Official route documented; live discovery and execution untested. |
 | GitHub Copilot | Project skill directory on supported surfaces | Official route documented; live discovery and execution untested. |
-| OpenClaw | Workspace skill directory | Official route documented; live discovery and execution untested. |
+| OpenClaw | Workspace skill directory | 2026.10.3 discovered all 17 skills as eligible, model-visible, command-visible, and user-invocable in an isolated workspace. Model execution and connected integrations untested. |
 | Other chat assistants | Instructions plus supplied inputs | Portable text fallback; not a native-installation or integration claim. |
 
 See [installation](installation.md) for the official sources and verification
@@ -110,3 +110,31 @@ The current suite contains 31 cases: the original 30 and one first-run setup
 case. No real messages were sent, accounts connected, client records used, or
 business outcomes measured. Public directory approval, other hosts, and live
 integration behavior require separate verification.
+
+## Public v0.2.0 distribution checks
+
+Public GitHub source at `35157b453a8ce10802e833c216057074a9884c55` was installed
+in fresh isolated projects. The Claude marketplace install reported 0.2.0 and
+all 79 installed skill payload files matched the source. Removal left the test
+context file intact. The pinned skills CLI installed all 17 skills for Claude
+Code and Codex, with 158 byte comparisons passing. A fresh Codex process then
+discovered all 17 project skills with zero project loading errors.
+
+This legitimate standalone installation used the CLI's default telemetry.
+The [morning directory page](https://www.skills.sh/sammollaei/law-firm-skills/morning)
+was visible afterward. Broad `law firm` and exact `sammollaei` CLI searches did
+not yet return the collection. A visible detail page does not prove search
+indexing, ranking, or organic adoption.
+
+The directory's October 15 Snyk check marked morning WARN for exposure to
+third-party email/message text (indirect prompt injection). Its other two
+listed checks passed. This is an expected input surface, not a guarantee of
+safety: source text is never authority, sends need scoped authorization, and
+host permission controls still matter. See the
+[actual warning](https://www.skills.sh/sammollaei/law-firm-skills/morning/security/snyk).
+
+OpenClaw 2026.10.3, running on Node 24.19.0 in isolated state and workspace
+folders, discovered all 17 copied skills as eligible and user-invocable.
+Installation used `--ignore-scripts --omit=optional`; the runtime warned that
+native fs-safe support was unavailable. No gateway, provider account, live
+model, or messaging integration was started. This establishes discovery only.

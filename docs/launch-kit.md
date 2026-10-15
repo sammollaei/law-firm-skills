@@ -40,6 +40,20 @@ https://sammollaei.github.io/law-firm-skills/
 
 Try one and tell me where the instructions could be clearer.
 
+## Three one-minute walkthroughs
+
+These silent, captioned videos present excerpts of actual Claude Code test
+outputs from fictional inputs. They are designed transcript walkthroughs,
+not screen recordings or demonstrations of connected accounts. They do not
+claim savings, real client results, or guaranteed model behavior.
+
+- [Morning brief](https://github.com/sammollaei/law-firm-skills/releases/download/v0.2.0/law-firm-skills-morning-demo.mp4)
+- [Choosing a first move](https://github.com/sammollaei/law-firm-skills/releases/download/v0.2.0/law-firm-skills-decide-demo.mp4)
+- [Meeting decisions and boundaries](https://github.com/sammollaei/law-firm-skills/releases/download/v0.2.0/law-firm-skills-meeting-demo.mp4)
+
+Each video is 60 seconds at 1920x1080. The scripts below are also available for
+Sam to record a live host walkthrough in his own voice.
+
 ## Three demonstration scripts
 
 Record only fictional material. Show the real host loading the intended public
