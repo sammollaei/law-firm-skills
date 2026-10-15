@@ -1,8 +1,74 @@
 # Installation
 
-Choose one workflow first. Download the collection source or use the local
-review folder. Inspect the chosen `skills/NAME/` directory before installing.
+Choose one workflow first. Inspect the chosen `skills/NAME/` directory before
+installing. Download ZIPs from the [public release](https://github.com/sammollaei/law-firm-skills/releases/latest)
+or use the version-pinned installer below.
 Do not copy any personal working data into it.
+
+## One-command install
+
+Requires Node.js 22.20 or newer and a working Git installation. Check with
+`node --version` and `git --version`. The installer is Vercel Labs' open-source
+[skills CLI](https://github.com/vercel-labs/skills), pinned to the version tested
+on October 15, 2026. It is separate from these skill instructions.
+
+Open a terminal in a new or existing project directory, then choose a command:
+
+```sh
+# Preview the 16 available skills without installing them.
+npx --yes skills@1.7.2 add sammollaei/law-firm-skills --list
+
+# Install morning for Claude Code in this project.
+npx --yes skills@1.7.2 add sammollaei/law-firm-skills --skill morning --agent claude-code --copy
+
+# Install morning for Codex in this project.
+npx --yes skills@1.7.2 add sammollaei/law-firm-skills --skill morning --agent codex --copy
+
+# Install the complete collection for both hosts in this project.
+npx --yes skills@1.7.2 add sammollaei/law-firm-skills --skill '*' --agent claude-code codex --copy
+```
+
+Run the host from this same project afterward. `--copy` preserves independent
+copies, including licenses and supporting files. The commands omit the installer's
+`-y` flag so a person can review its choices; `npx --yes` only accepts running the
+specified CLI package. Review collisions before proceeding. The installer may
+run non-interactively when launched by an agent, so inspect target folders first.
+
+These commands install at project scope. Adding `--global` installs at personal
+scope; do that only after checking for existing same-name skills. Do not use
+`--all` as a shortcut: it also selects all supported agents.
+
+The CLI reports anonymous install telemetry to skills.sh. Its supported opt-out
+is `DISABLE_TELEMETRY=1` (or `DO_NOT_TRACK=1`); see its documentation. Local tests
+used the opt-out. Manual ZIP installation does not require this CLI.
+
+## Test morning
+
+Start a fresh Claude Code or Codex session in the project. Confirm `morning`
+appears in the skill selector. Use `/morning` in Claude Code or `$morning` in
+Codex, followed by:
+
+> Use only this fictional snapshot. Firm: Example Practice. Review window:
+> October 15, 2026, 08:00-09:00 America/Los_Angeles; cutoff 09:00. Inbox M1:
+> client requests a status reply, no send approval. Task T1: manager says the
+> intake SOP is done, but no document is supplied. Calendar C1: intake meeting
+> at 10:00. Live inbox, messaging, CRM and metrics are unavailable. Produce a
+> brief only. Do not contact anyone, change tasks, or access real accounts.
+
+Expected: it loads this collection's morning skill, keeps M1 unsent, treats T1
+as unverified, distinguishes the future meeting from completed work, and names
+missing coverage. Check the actual source path if another `morning` exists.
+This test does not establish that live connectors are configured.
+
+Troubleshooting:
+
+- Skill missing: confirm the exact folder layout below and start the host in
+  the directory where you installed it. Restart or use its supported refresh.
+- Wrong morning skill: Claude Code gives personal skills precedence over project
+  skills with the same name. Compare the source paths before changing either copy.
+- Installer fails on an old Node version: use Node 22.20+ or the ZIP route.
+- No inbox access: connect your own authorized tools or supply an export. A skill
+  installation does not grant account access.
 
 ## Claude Code and Codex
 

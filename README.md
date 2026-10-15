@@ -11,6 +11,26 @@ Created and adapted by [Sam Mollaei](https://github.com/sammollaei).
 Free to use, modify, and share commercially under the [MIT License](LICENSE),
 with [upstream attribution](THIRD_PARTY_NOTICES.md) preserved.
 
+## Install in a project
+
+With Node.js 22.20+ installed, open a terminal in the project where you use
+Claude Code or Codex and run this tested, version-pinned installer:
+
+```sh
+npx --yes skills@1.7.2 add sammollaei/law-firm-skills --skill morning --agent claude-code codex --copy
+```
+
+Choose only the host you use if preferred. Restart that host in the same project,
+then run `/morning` in Claude Code or `$morning` in Codex. For all 16 skills,
+replace `morning` in the installer command with `'*'`. Review any overwrite
+prompt if you already have a skill with the same name.
+
+Start with the [fictional morning test](docs/installation.md#test-morning).
+Your own approved connectors are needed for live inbox or business-system work.
+For ZIP downloads, other platforms, and troubleshooting, see
+[installation](docs/installation.md). [Test results](docs/compatibility.md)
+separate successful installation from workflow quality and untested integrations.
+
 ## Try one
 
 Start with [decide](skills/decide/README.md). It can work from a question and
