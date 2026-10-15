@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan sustainable growth"
+  short_description: "Model growth against capacity and cash"
+  default_prompt: "Use $scale-plan. Model this growth goal against the supplied capacity, costs, and cash assumptions."

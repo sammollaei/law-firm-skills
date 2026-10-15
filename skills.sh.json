@@ -1,0 +1,43 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Start here",
+      "skills": [
+        "setup",
+        "decide",
+        "playbook"
+      ]
+    },
+    {
+      "title": "Run the day",
+      "skills": [
+        "morning",
+        "email",
+        "meeting",
+        "follow-up",
+        "todoist"
+      ]
+    },
+    {
+      "title": "Choose what matters",
+      "skills": [
+        "next",
+        "blind-spot",
+        "build",
+        "watch",
+        "link-review",
+        "friday"
+      ]
+    },
+    {
+      "title": "Improve the firm",
+      "skills": [
+        "evaluate-team",
+        "profit-plan",
+        "scale-plan"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "law-firm-skills",
+  "version": "0.2.0",
+  "description": "Practice-management workflows for lawyers and law firm owners: daily briefs, meeting actions, follow-ups, decisions, and staff playbooks.",
+  "author": {
+    "name": "Sam Mollaei",
+    "url": "https://github.com/sammollaei"
+  },
+  "homepage": "https://sammollaei.github.io/law-firm-skills/",
+  "repository": "https://github.com/sammollaei/law-firm-skills",
+  "license": "MIT",
+  "keywords": [
+    "law-firm",
+    "lawyers",
+    "practice-management",
+    "agent-skills",
+    "productivity"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Law Firm Skills",
+        "shortDescription": "Daily law firm workflows",
+        "longDescription": "Plan your law firm's day, turn meeting notes into accountable next steps, review team commitments, and document repeatable processes. Includes 16 workflows plus guided setup. Start with supplied notes or use tools you have already authorized in your AI workspace. This skills-only package does not connect your email or case-management system. Financial workflows include optional Node.js helpers; script execution depends on the host.",
+        "developerName": "Sam Mollaei",
+        "category": "Productivity",
+        "capabilities": [
+          "Morning briefs",
+          "Meeting action plans",
+          "Commitment reviews",
+          "Staff playbooks",
+          "Decision support"
+        ],
+        "websiteURL": "https://sammollaei.github.io/law-firm-skills/",
+        "supportURL": "https://sammollaei.github.io/law-firm-skills/support.html",
+        "privacyPolicyURL": "https://sammollaei.github.io/law-firm-skills/privacy.html",
+        "termsOfServiceURL": "https://sammollaei.github.io/law-firm-skills/terms.html",
+        "defaultPrompt": [
+          "Brief me on my law firm's priorities from these updates.",
+          "Turn this meeting transcript into decisions and action items.",
+          "Turn this intake process into a staff playbook."
+        ],
+        "brandColor": "#153C43",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "publication": {
+        "release_notes": "Adds guided setup, plugin packages, descriptive skill labels, and a more concise morning brief. Retains the 16 standalone workflows."
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Get started"
+  short_description: "Choose your first law firm workflow"
+  default_prompt: "Use $setup. Help me choose and try my first workflow using a fictional example."

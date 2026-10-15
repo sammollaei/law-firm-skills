@@ -1,0 +1,14 @@
+{
+  "name": "sam-mollaei",
+  "description": "Open-source law firm workflows by Sam Mollaei.",
+  "owner": {
+    "name": "Sam Mollaei"
+  },
+  "plugins": [
+    {
+      "name": "law-firm-skills",
+      "source": "./",
+      "description": "Practice-management workflows for lawyers and law firm owners: daily briefs, meeting actions, follow-ups, decisions, and staff playbooks."
+    }
+  ]
+}

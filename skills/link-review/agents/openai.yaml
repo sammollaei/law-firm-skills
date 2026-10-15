@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review a resource"
+  short_description: "Evaluate articles, tools, posts, and repos"
+  default_prompt: "Use $link-review. Evaluate this resource and recommend whether to use, save, or skip it."

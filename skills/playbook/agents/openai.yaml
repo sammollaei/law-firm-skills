@@ -1,0 +1,4 @@
+interface:
+  display_name: "Document a process"
+  short_description: "Turn an established process into a clear SOP"
+  default_prompt: "Use $playbook. Turn this established process into a playbook with owners, exceptions, and checks."

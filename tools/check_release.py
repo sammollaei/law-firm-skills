@@ -6,18 +6,28 @@ The metadata check intentionally covers this collection's conservative scalar
 schema; a host's real YAML loader remains a separate compatibility check.
 """
 from pathlib import Path
+import json
 import re
+import struct
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SKILLS = (
     "morning", "watch", "build", "next", "link-review", "meeting", "friday",
     "todoist", "blind-spot", "decide", "evaluate-team", "email", "profit-plan",
-    "follow-up", "scale-plan", "playbook",
+    "follow-up", "scale-plan", "playbook", "setup",
 )
-ROOT_FILES = {"README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", ".gitignore"}
-DOCS = {"installation.md", "configuration.md", "compatibility.md", "validation.md"}
-TOOLS = {"check_release.py", "build_release.py"}
+VERSION = "0.2.0"
+ROOT_FILES = {"README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", ".gitignore",
+              "plugin.json", "skills.sh.json", ".claude-plugin/plugin.json",
+              ".claude-plugin/marketplace.json", ".agents/plugins/marketplace.json", "assets/icon.svg", "assets/icon.png"}
+DOCS = {"installation.md", "configuration.md", "compatibility.md", "validation.md",
+        "index.html", "styles.css", "privacy.html", "terms.html", "support.html", ".nojekyll",
+        "launch-kit.md"}
+TOOLS = {"check_release.py", "build_release.py", "test_release.py"}
+EVAL_CASES = tuple(f"{skill}-{kind}-{letter}" for skill in
+                   ("morning", "meeting", "follow-up", "playbook", "decide")
+                   for kind in ("direct", "indirect", "negative") for letter in ("a", "b")) + ("setup-first-run",)
 EXTRAS = {
     "watch": {"THIRD_PARTY_NOTICES.md", "UPSTREAM_LICENSE"},
     "evaluate-team": {"references/role-worksheet.md"},
@@ -31,9 +41,11 @@ def expected_files():
     result = set(ROOT_FILES)
     result.update("docs/" + name for name in DOCS)
     result.update("tools/" + name for name in TOOLS)
+    for name in EVAL_CASES:
+        result.update(f"evals/{name}/{leaf}" for leaf in ("prompt.md", "graders/criteria.md"))
     for name in SKILLS:
         result.update("skills/" + name + "/" + leaf for leaf in
-                      {"SKILL.md", "README.md", "LICENSE"} | EXTRAS.get(name, set()))
+                      {"SKILL.md", "README.md", "LICENSE", "agents/openai.yaml"} | EXTRAS.get(name, set()))
     return result
 
 
@@ -81,6 +93,12 @@ def check(root=ROOT):
         path = root / item
         if path.is_symlink() or not path.resolve().is_relative_to(root):
             continue
+        if item == "assets/icon.png":
+            body = path.read_bytes()
+            if (body[:8] != b"\x89PNG\r\n\x1a\n" or len(body) < 33
+                    or struct.unpack(">II", body[16:24]) != (512, 512)):
+                errors.append("invalid 512px PNG icon")
+            continue
         try:
             text = path.read_text(encoding="utf-8")
         except (UnicodeError, OSError):
@@ -88,6 +106,25 @@ def check(root=ROOT):
             continue
         if not text.isascii():
             errors.append(f"non-ASCII text: {item}")
+        if path.suffix == ".json":
+            try:
+                json.loads(text)
+            except ValueError:
+                errors.append(f"invalid JSON: {item}")
+        if item.endswith("agents/openai.yaml"):
+            try:
+                lines = text.splitlines()
+                if lines[0] != "interface:" or len(lines) != 4:
+                    raise ValueError("unexpected UI metadata shape")
+                ui = {line.strip().split(": ", 1)[0]: json.loads(line.split(": ", 1)[1]) for line in lines[1:]}
+                if set(ui) != {"display_name", "short_description", "default_prompt"}:
+                    raise ValueError("unexpected UI keys")
+                if not 25 <= len(ui["short_description"]) <= 64:
+                    raise ValueError("short description must be 25-64 characters")
+                if "$" + path.parents[1].name not in ui["default_prompt"]:
+                    raise ValueError("default prompt must name this skill")
+            except (ValueError, IndexError, TypeError) as exc:
+                errors.append(f"invalid UI metadata: {item}: {exc}")
         if path.name == "SKILL.md":
             try:
                 fm = metadata(text)
@@ -97,6 +134,8 @@ def check(root=ROOT):
                     errors.append(f"invalid description/license: {item}")
                 if len(text.splitlines()) > 500:
                     errors.append(f"oversized entrypoint: {item}")
+                if f'  version: "{VERSION}"' not in text:
+                    errors.append(f"inconsistent skill version: {item}")
             except ValueError as exc:
                 errors.append(f"metadata error: {item}: {exc}")
         if path.suffix == ".md":
@@ -109,6 +148,27 @@ def check(root=ROOT):
                     errors.append(f"broken or escaping local link: {item}")
                 if item.startswith("skills/") and not resolved.is_relative_to(path.parents[len(Path(item).parts) - 3]):
                     errors.append(f"skill depends on another folder: {item}")
+    if not errors:
+        plugin = json.loads((root / "plugin.json").read_text())
+        claude = json.loads((root / ".claude-plugin/plugin.json").read_text())
+        marketplace = json.loads((root / ".claude-plugin/marketplace.json").read_text())
+        interface = plugin["extensions"]["com.openai"]["interface"]
+        if any(p["version"] != VERSION or p["name"] != "law-firm-skills" for p in (plugin, claude)):
+            errors.append("plugin version or name mismatch")
+        if marketplace["plugins"][0]["source"] != "./":
+            errors.append("marketplace source must be this repository")
+        if len(interface["displayName"]) > 30 or len(interface["shortDescription"]) > 30:
+            errors.append("plugin display name or subtitle exceeds directory limit")
+        prompts = interface["defaultPrompt"]
+        if len(prompts) > 3 or any(len(p) > 128 for p in prompts):
+            errors.append("invalid directory starter prompts")
+        for value in (interface["composerIcon"], interface["logo"], plugin["extensions"]["com.openai"]["onboardingSkill"]):
+            if value.removeprefix("./") not in expected:
+                errors.append("plugin references an unpackaged file")
+        groupings = json.loads((root / "skills.sh.json").read_text())["groupings"]
+        grouped = [skill for group in groupings for skill in group["skills"]]
+        if len(grouped) != len(SKILLS) or set(grouped) != set(SKILLS):
+            errors.append("directory groups must cover every skill once")
     return errors
 
 

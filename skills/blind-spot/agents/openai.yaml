@@ -1,0 +1,4 @@
+interface:
+  display_name: "Find a blind spot"
+  short_description: "Find the constraint holding back your goal"
+  default_prompt: "Use $blind-spot. Find the most important overlooked assumption or bottleneck in this goal."

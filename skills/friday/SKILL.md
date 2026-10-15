@@ -4,7 +4,7 @@ description: Review a lawyer's or law firm owner's saved links for a selected we
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Friday

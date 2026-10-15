@@ -1,0 +1,4 @@
+interface:
+  display_name: "Meeting to action"
+  short_description: "Turn meeting notes into accountable work"
+  default_prompt: "Use $meeting. Turn these meeting notes into decisions, owners, and approval-ready actions."

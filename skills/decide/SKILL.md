@@ -4,7 +4,7 @@ description: Compare options for a lawyer or law firm owner, test pivotal assump
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Decide
@@ -34,6 +34,23 @@ The recommendation may be to hold, decline all options, or run a bounded test.
    condition. Stop researching when more information is unlikely to change
    the decision, proportionate to the stakes.
 
+Missing cost, effort, downtime, training, or benefit data stays unknown. An
+existing feature is not necessarily free to activate or operate. Do not call an
+option cheapest, near-zero cost, immediate, risk-free, or guaranteed to avoid
+retraining without evidence. A qualitative comparison can be useful, but label
+its assumptions and check what could reverse it. Best-case scenarios are
+hypotheses, not verified facts. Avoid absolute claims such as "under any
+plausible numbers" when key inputs are missing.
+
+Use a compact Known / Unknown / Assumptions distinction when inputs are sparse.
+Keep cost and migration-effort comparisons inside the assumptions section:
+"If setup requires less effort than migration, testing the existing feature is
+the more reversible first step." Do not convert that condition into "the
+cheaper intervention" later in the answer. Never assert that a migration will
+consume most capacity, take a month, or teach nothing without supporting data.
+Proposed trial duration and success thresholds must be labeled as proposals
+and sized from available volume; do not invent a one-month requirement.
+
 If a pivotal unknown prevents a responsible choice after available checks,
 recommend the bounded check that would resolve it and explain why it matters.
 Do not hand research back to the user when authorized tools can do it. If the
@@ -56,7 +73,8 @@ which one. "Should we do this?" includes doing it and declining it as options.
 
 After the recommendation, include only the comparison, evidence, confidence
 with its reason, and reversal condition needed to assess it. Expand enough for
-consequential decisions to be auditable. Keep source links beside material
+consequential decisions to be auditable. For an ordinary supplied-facts choice,
+aim for 200-350 words rather than a long essay. Keep source links beside material
 claims. Self-review is not independent verification.
 
 This skill permits investigation and advice, not execution. Do not spend,

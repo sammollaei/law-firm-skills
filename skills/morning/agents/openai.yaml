@@ -1,0 +1,4 @@
+interface:
+  display_name: "Morning brief"
+  short_description: "Review priorities, evidence, and decisions"
+  default_prompt: "Use $morning. Review the morning from these updates and identify decisions and coverage gaps."

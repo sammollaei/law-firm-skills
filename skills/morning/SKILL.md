@@ -4,7 +4,7 @@ description: Review a law firm owner's inbox, messages, calendar, tasks, and ope
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Morning
@@ -57,6 +57,8 @@ make the brief shorter; those changes need authorization and their own readback.
 
 ## Brief the owner
 
+Default to 200-300 words for an ordinary daily brief; use less when there is
+little to report. Expand only for a complex urgent issue or an explicit request.
 Lead with the most consequential verified result or urgent decision. Include:
 
 - Completed outcomes and their evidence links, separately from sent requests.
@@ -64,9 +66,26 @@ Lead with the most consequential verified result or urgent decision. Include:
 - Waiting work: existing owner, missing result, and known date or dependency.
 - Scope, cutoff, completed/open counts, and material coverage gaps.
 
+Count distinct tracked work items once. Explain the counting scope; a calendar
+event or contextual message is not an extra task unless it creates separate
+work. Put each item in one primary status and avoid repeating it across sections.
+Preserve supplied dates and timezone. Omit the weekday unless verified with a
+calendar or date tool; never infer it from a familiar-looking date.
+In a brief-only run, describe a verified outcome without saying a task was
+closed, a record updated, or a handoff made. Those verbs imply actions and need
+separate authorization and readback. Keep proposed checkpoints conditional;
+an upcoming meeting does not establish that an unrelated deliverable is due then.
+For a client status request, check whether verified status facts and the intended
+recipient are available as well as send approval. If only the request is supplied,
+those facts remain missing. Do not say approval is the only blocker or that the
+reply is cheap/easy when its content and required investigation are unknown.
+
 Keep routine department work with its verified owner. Do not make the managing
 partner the default approver or invent owners, targets, hours saved, or next
-steps. A new improvement belongs in the brief only if evidence makes it worth
+steps. A manager's unsupported claim of completion belongs under waiting for
+evidence with that manager, not under owner decisions. Escalate it only when
+there is a concrete decision, deadline, or risk requiring the owner.
+A new improvement belongs in the brief only if evidence makes it worth
 the owner's attention. A proposed follow-up is not a scheduled reminder.
 
 If no connectors are available, review supplied exports and identify what

@@ -11,7 +11,30 @@ Created and adapted by [Sam Mollaei](https://github.com/sammollaei).
 Free to use, modify, and share commercially under the [MIT License](LICENSE),
 with [upstream attribution](THIRD_PARTY_NOTICES.md) preserved.
 
-## Install in a project
+## Start here
+
+Visit the [quick-start website](https://sammollaei.github.io/law-firm-skills/) for
+a simple catalog, a fictional first example, and installation choices. The
+collection includes 16 substantive workflows plus an optional setup skill.
+
+## Install the Claude Code plugin
+
+Run these inside Claude Code:
+
+```text
+/plugin marketplace add sammollaei/law-firm-skills
+/plugin install law-firm-skills@sam-mollaei
+```
+
+Restart, then use `/law-firm-skills:setup` or `/law-firm-skills:morning`.
+The namespace distinguishes the plugin from a personal skill with the same name.
+These commands use this repository's marketplace; directory approval is separate.
+
+The release also includes a root-manifest plugin ZIP for OpenAI's publisher flow.
+ChatGPT and Claude directory listings are **not live yet**. Do not treat a ZIP
+or a submitted review as a published listing. See [compatibility](docs/compatibility.md).
+
+## Install individual skills in a project
 
 With Node.js 22.20+ installed, open a terminal in the project where you use
 Claude Code or Codex and run this tested, version-pinned installer:
@@ -21,7 +44,7 @@ npx --yes skills@1.7.2 add sammollaei/law-firm-skills --skill morning --agent cl
 ```
 
 Choose only the host you use if preferred. Restart that host in the same project,
-then run `/morning` in Claude Code or `$morning` in Codex. For all 16 skills,
+then run `/morning` in Claude Code or `$morning` in Codex. For all workflows plus setup,
 replace `morning` in the installer command with `'*'`. Review any overwrite
 prompt if you already have a skill with the same name.
 

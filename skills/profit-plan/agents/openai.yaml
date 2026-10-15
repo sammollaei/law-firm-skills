@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan for profit"
+  short_description: "Understand fees, costs, and matter economics"
+  default_prompt: "Use $profit-plan. Analyze these supplied fees and costs using the documented calculation contract."

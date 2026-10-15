@@ -5,6 +5,43 @@ installing. Download ZIPs from the [public release](https://github.com/sammollae
 or use the version-pinned installer below.
 Do not copy any personal working data into it.
 
+## Claude Code plugin
+
+Inside Claude Code, add the repository marketplace, then install its plugin:
+
+```text
+/plugin marketplace add sammollaei/law-firm-skills
+/plugin install law-firm-skills@sam-mollaei
+```
+
+The shell CLI equivalents are `claude plugin marketplace add
+sammollaei/law-firm-skills` and `claude plugin install
+law-firm-skills@sam-mollaei --scope project`. The explicit project scope keeps
+installation tied to the selected project; in-app UI may offer other scopes.
+Restart, then run `/law-firm-skills:setup`. Use `/law-firm-skills:morning` for
+the fictional morning test below. A standalone skill still uses `/morning`.
+
+To remove the project plugin, use `claude plugin uninstall
+law-firm-skills@sam-mollaei --scope project` from that project. Preserve private
+context outside plugin files. Review updates before installing them.
+
+Source: [Anthropic plugin documentation](https://code.claude.com/docs/en/plugins).
+
+## ChatGPT and Codex plugin directory
+
+A skills-only plugin package is included in the release for the publisher
+submission flow. It contains `plugin.json` at the ZIP root and includes guided
+setup. **No public directory listing is live yet.** The website will link the
+actual listing after publisher verification, review, and host testing.
+
+Once a listing exists, ChatGPT users can install and select the plugin with
+the @ selector; Codex exposes installed skills through its skill selector.
+Until then, Codex's tested standalone installation below remains available.
+ChatGPT users can try the portable prompt fallback, which is not a native plugin.
+
+Sources: [OpenAI packaging](https://developers.openai.com/plugins/build/plugins)
+and [submission](https://developers.openai.com/plugins/deploy/submission).
+
 ## One-command install
 
 Requires Node.js 22.20 or newer and a working Git installation. Check with
@@ -15,7 +52,7 @@ on October 15, 2026. It is separate from these skill instructions.
 Open a terminal in a new or existing project directory, then choose a command:
 
 ```sh
-# Preview the 16 available skills without installing them.
+# Preview the 16 workflows plus setup without installing them.
 npx --yes skills@1.7.2 add sammollaei/law-firm-skills --list
 
 # Install morning for Claude Code in this project.

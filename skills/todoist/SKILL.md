@@ -4,7 +4,7 @@ description: Work a selected Todoist task or the user's due and overdue tasks, v
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Todoist

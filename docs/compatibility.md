@@ -1,12 +1,12 @@
 # Compatibility and evidence
 
-Documentation and installation checks updated October 15, 2026. A shared file format does not guarantee
+Documentation and installation checks updated October 15, 2026. Current package: v0.2.0. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
 
 | Host | Delivery route | Evidence for this release |
 |---|---|---|
-| Claude Code | Native project skill directory | All 16 commands discovered by v2.1.278; `/morning` loaded the public skill and produced a fictional brief. Workflow quality caveats below. |
-| Codex | Native project skill directory | All 16 skills discovered by CLI v0.155.1 with no project loading errors; `$morning` loaded the public skill and produced a fictional brief. |
+| Claude Code | Plugin marketplace or standalone skills | v2.1.278 installed the local v0.2.0 plugin in an isolated project; 17 components discovered. Native model evaluations and limits below. Public standalone v0.1.0 also tested. |
+| Codex | Standalone skills; plugin metadata | v0.155.1 discovered and read all 17 v0.2.0 plugin components without errors. Native plugin installation was not tested. Public standalone v0.1.0 installation and `$morning` execution passed the bounded checks below. |
 | Grok Bot | Save supplied workflow as a private skill | Official saved-skill workflow documented. Account installation and execution untested. |
 | Grok Build | Native skill directory | Official route documented; live discovery and execution untested. |
 | Cursor | Native skill directory | Official route documented; live discovery and execution untested. |
@@ -43,7 +43,7 @@ Only a real host run with an observed outcome can be called "live tested."
 The runs below used live models and fictional inputs. They do not establish
 real mailbox actions, client-data processing, or every platform's behavior.
 
-## October 15 installation verification
+## Public v0.1.0 installation verification
 
 Source: public GitHub commit `722e092073fd472b32a7b7e249d707110e182d56`
 and the public v0.1.0 release. Tests ran on macOS using Node.js 22.22.2 and
@@ -80,3 +80,33 @@ Installation passed. Consistent brevity, owner routing, and factual date display
 still need repeated evaluation before claims of broad workflow reliability.
 No end-to-end execution claim is made for the other 15 skills, live email/CRM
 integrations, Windows, mobile apps, or the other hosts listed above.
+
+## v0.2.0 plugin and model checks
+
+Claude Code 2.1.278 installed the local marketplace in an isolated project,
+reported version 0.2.0 enabled, and removed it while preserving a separate
+fictional context file. A same-version update check passed; this does not prove
+a cross-version upgrade. No personal global skill or plugin was replaced.
+Codex 0.155.1 parsed the local marketplace and returned all 17 components with
+no plugin loading errors. Both Claude manifests passed strict native validation.
+
+The initial native Claude evaluation ran 30 fictional cases with the plugin
+and the same 30 without it, one run per arm. Automated grading passed 29/30
+plugin cases and 28/30 baseline cases. The plugin failure was a valid French
+translation rejected by an overly strict grader; after correcting that rubric,
+three repeat runs passed. All ten indirect requests actually invoked the
+matching skill in the trace. This is not evidence of a general quality advantage.
+
+Manual review found problems the automated grades missed: excess detail,
+unsupported cost/effort comparisons, and an incomplete account of what was
+missing before a client reply. The morning and decide instructions were tightened.
+Twenty targeted reruns passed their automated checks. After a final wording
+refinement, two morning runs, two decide runs, and one setup run also passed.
+These are bounded fictional examples, not a full rerun of every case on the
+final wording. Responses can still contain loose inferences or exceed the
+preferred length. Review consequential output against the supplied evidence.
+
+The current suite contains 31 cases: the original 30 and one first-run setup
+case. No real messages were sent, accounts connected, client records used, or
+business outcomes measured. Public directory approval, other hosts, and live
+integration behavior require separate verification.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Make a decision"
+  short_description: "Compare options with evidence and tradeoffs"
+  default_prompt: "Use $decide. Compare these options and recommend a choice with conditions that would change it."

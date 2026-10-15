@@ -4,7 +4,7 @@ description: Turn a law firm's idea for a tool, workflow, document, or automatio
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Build

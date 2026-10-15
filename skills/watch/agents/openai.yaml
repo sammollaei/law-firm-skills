@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video review"
+  short_description: "Extract useful ideas from videos and demos"
+  default_prompt: "Use $watch. Review this video using the available transcript and visual evidence."

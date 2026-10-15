@@ -1,0 +1,4 @@
+interface:
+  display_name: "Choose what is next"
+  short_description: "Choose the next action, wait, or stop"
+  default_prompt: "Use $next. Help me choose the next worthwhile action across these priorities."

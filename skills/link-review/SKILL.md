@@ -4,7 +4,7 @@ description: Evaluate articles, posts, repositories, tools, and other links agai
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Link review

@@ -11,7 +11,7 @@ from pathlib import Path
 import re
 import zipfile
 
-from check_release import ROOT, SKILLS, check, expected_files
+from check_release import ROOT, SKILLS, VERSION, check, expected_files
 
 STAMP = (2026, 1, 1, 0, 0, 0)
 
@@ -67,7 +67,12 @@ def build(output):
         raise ValueError("source validation failed:\n" + "\n".join(issues))
     files = {key: (ROOT / key).read_bytes() for key in sorted(expected_files())}
     output.mkdir(parents=True, exist_ok=False)
-    write_zip(output / "law-firm-skills-0.1.0.zip", {"law-firm-skills/" + key: body for key, body in files.items()})
+    write_zip(output / f"law-firm-skills-{VERSION}.zip", {"law-firm-skills/" + key: body for key, body in files.items()})
+    # Plugin upload requires plugin.json at the ZIP root, not inside a wrapper.
+    plugin_files = {key: body for key, body in files.items()
+                    if key in {"plugin.json", "LICENSE", "THIRD_PARTY_NOTICES.md", ".claude-plugin/plugin.json"}
+                    or key.startswith(("skills/", "assets/"))}
+    write_zip(output / f"law-firm-skills-plugin-{VERSION}.zip", plugin_files)
     for name in SKILLS:
         prefix = "skills/" + name + "/"
         selected = {name + "/" + key.removeprefix(prefix): body for key, body in files.items() if key.startswith(prefix)}
@@ -78,7 +83,7 @@ def build(output):
         if target.read_bytes() != prompt:
             raise RuntimeError("prompt readback failed")
     manifest = {
-        "version": "0.1.0",
+        "version": VERSION,
         "sourceFiles": {key: hashlib.sha256(body).hexdigest() for key, body in files.items()},
         "artifacts": {path.name: hashlib.sha256(path.read_bytes()).hexdigest()
                       for path in sorted(output.iterdir()) if path.is_file()},

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekly idea review"
+  short_description: "Find worthwhile ideas in saved resources"
+  default_prompt: "Use $friday. Review these saved links and identify the ideas worth my attention this week."

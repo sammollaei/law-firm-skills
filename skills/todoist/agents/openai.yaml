@@ -1,0 +1,4 @@
+interface:
+  display_name: "Work through tasks"
+  short_description: "Work tasks while preserving commitments"
+  default_prompt: "Use $todoist. Review these selected tasks and separate authorized work from blocked items."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build a workflow"
+  short_description: "Specify, approve, build, and verify an idea"
+  default_prompt: "Use $build. Turn this idea into a specification and wait for my approval before building."

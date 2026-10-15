@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resolve an email"
+  short_description: "Do authorized work behind an email request"
+  default_prompt: "Use $email. Review this complete email thread and prepare the authorized work and response."

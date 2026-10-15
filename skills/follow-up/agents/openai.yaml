@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check commitments"
+  short_description: "Verify progress and draft useful follow-ups"
+  default_prompt: "Use $follow-up. Check these commitments against the supplied evidence and draft needed follow-ups."
