@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prepare for a meeting"
+  short_description: "Bring verified commitments and decisions to the call"
+  default_prompt: "Use $meeting-prep. Prepare a short brief for this meeting with verified commitments, numbers, and decisions to obtain."

@@ -1,12 +1,12 @@
 # Compatibility and evidence
 
-Documentation and installation checks updated October 15, 2026. Current package: v0.2.1. A shared file format does not guarantee
+Documentation updated November 3, 2026. Current package: v0.3.0. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
 
-| Host | Delivery route | Evidence for this release |
+| Host | Delivery route | Dated evidence (see version-specific results below) |
 |---|---|---|
-| Claude Code | Plugin marketplace or standalone skills | v2.1.278 installed the public v0.2.0 plugin in an isolated project; all 79 skill payload files matched. Native model evaluations and limits below. Public standalone v0.1.0 also tested. |
-| Codex | Standalone skills; plugin metadata | v0.155.1 discovered all 17 CLI-installed v0.2.0 skills without project loading errors, and read all 17 plugin components. Native plugin installation was not tested. Public standalone v0.1.0 installation and `$morning` execution passed the bounded checks below. |
+| Claude Code | Plugin marketplace or standalone skills | v2.1.281 installed v0.3.0 locally in an isolated profile; 88 skill files matched. Strict validation passed. Nine native model cases ran after reauthentication; qualified results below. |
+| Codex | Standalone skills; plugin metadata | v0.155.1 discovered all 19 v0.3.0 skills and read 19 plugin components without project errors. Nine installed-skill model runs met the reviewed fictional criteria. Native plugin installation is untested. |
 | Grok Bot | Save supplied workflow as a private skill | Official saved-skill workflow documented. Account installation and execution untested. |
 | Grok Build | Native skill directory | Official route documented; live discovery and execution untested. |
 | Cursor | Native skill directory | Official route documented; live discovery and execution untested. |
@@ -17,6 +17,58 @@ identical tool access, permissions, model behavior, or task completion.
 
 See [installation](installation.md) for the official sources and verification
 steps. The library has not been tested end to end on every platform.
+
+## v0.3.0 checks on November 3, 2026
+
+- The allowlist contains 196 release files, 19 skill folders, and 40 fictional
+  evaluation cases. Three reproducible-export tests and 38 calculator tests pass.
+- Claude Code 2.1.281 passes strict plugin/marketplace validation. Version
+  2.1.278 passes ordinary validation but warns about five directory metadata
+  fields, which that older CLI does not recognize. The fields are retained for
+  the directory, as documented by Anthropic.
+- An isolated Claude profile installs version 0.3.0 from the local marketplace;
+  all 88 skill payload files match. Uninstall removes the test plugin and
+  preserves a separate fictional context file. Personal installations are untouched.
+- skills@1.7.2 on Node 22.22.2 installs all 19 skills for Claude Code and Codex
+  into an isolated project, with telemetry disabled. All 176 file comparisons match.
+- A fresh Codex 0.155.1 process discovers 19 project skills without project
+  errors; its plugin reader also returns 19 components.
+- Nine Codex model runs use the installed skill paths with fictional inputs.
+  Manual review of every answer passes the stated regression criteria. Traces
+  contain only reads of those skill files and packaged references. This covers
+  the five changed workflows, meeting-prep, and verify's missing/invalid-review
+  cases. One run per case is limited evidence, not a reliability guarantee.
+- After CLI reauthentication, Claude 2.1.281 ran all nine new fictional cases.
+  The first automated result was 7/9. Manual review found two real issues:
+  meeting changed a proposed send into a draft, and verify accepted a narrower
+  observation than the actual saved-state claim. Both instructions were corrected.
+- A full rerun scored 5/9. Review found ambiguous grading criteria as well as an
+  unsupported technical-cause inference in email. The criteria were clarified
+  without removing the required boundaries; email now requires evidence before
+  asserting the cause of corrupted text. Verify now states the overall status
+  precedence explicitly.
+- Targeted final runs passed email, meeting, and unavailable-review grading.
+  The latest selected runs therefore pass 8/9 automated cases. The coverage
+  case still receives a failing automated grade despite marking both claims
+  unverified, rejecting missing/unknown claim IDs and unverified provenance,
+  and reporting independent review unavailable. Manual review supports those
+  specific boundaries, and a separate tool-free review agreed criterion by
+  criterion. The automated failure is retained, not reported as a pass.
+- Final targeted Codex reruns cover email and both verify cases after the last
+  instruction changes. Every answer was read against its fictional criteria;
+  only installed skill files and their packaged references were accessed.
+
+These are bounded samples, not reliability rates. Responses can still be
+longer than useful and make unnecessary hypothetical inferences. All nine
+new cases have observed model outputs in both Claude and Codex; the remaining
+31 cases were not rerun for this release.
+No real messages, client records, personnel records, or connected-system writes
+were used. Live integrations require separate access and verification. A fresh, tool-free
+Claude review of the seven changed/new public workflow files and their linked
+resources supported the privacy and authority boundaries; it was a source-text
+review, not an independent live-system check. The verify workflow intentionally provides
+a bounded packet handoff rather than an automatic CLI launcher. Other hosts'
+earlier discovery results below do not establish v0.3.0 compatibility.
 
 ## Capability limits
 
@@ -121,7 +173,7 @@ These are bounded fictional examples, not a full rerun of every case on the
 final wording. Responses can still contain loose inferences or exceed the
 preferred length. Review consequential output against the supplied evidence.
 
-The current suite contains 31 cases: the original 30 and one first-run setup
+The v0.2.0 suite contained 31 cases: the original 30 and one first-run setup
 case. No real messages were sent, accounts connected, client records used, or
 business outcomes measured. Public directory approval, other hosts, and live
 integration behavior require separate verification.

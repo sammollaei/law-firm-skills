@@ -4,13 +4,13 @@ description: Help a lawyer, law firm owner, or practice manager get started with
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.2.1"
+  version: "0.3.0"
 ---
 
 # Get started with Law Firm Skills
 
 Help the user get one useful result with minimal setup. This collection contains
-16 practice-management workflows plus this onboarding skill. Installation grants
+18 practice-management workflows plus this onboarding skill. Installation grants
 no access to accounts, permission to act, or ongoing background work.
 
 ## First conversation
@@ -26,6 +26,9 @@ fictional example below without blocking on configuration.
 Choose decide or playbook for the first result. Use morning once source coverage
 is understood. Other entry points: meeting for notes to actions; follow-up for
 existing commitments; build for an idea requiring a specification and approval.
+Use meeting-prep before a call and verify to check a completed result. Explain
+that independent review needs a separate authorized provider and an approved
+evidence packet; missing access is reported, not silently substituted.
 Name the intended skill and load it using the host's skill selector when
 available. If it is not installed or available, say so and provide the explicit
 request the user can paste. Do not claim an unavailable skill was invoked.

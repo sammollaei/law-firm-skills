@@ -40,8 +40,8 @@ local references. It packages only the explicit allowlist. Output contains:
 
 - One complete source ZIP with no Git history.
 - One plugin ZIP with plugin.json at its root, skills, assets, and notices.
-- Seventeen single-skill ZIPs (16 workflows plus setup), preserving local resources.
-- Seventeen portable workflow prompts with Markdown references embedded.
+- Nineteen single-skill ZIPs (18 workflows plus setup), preserving local resources.
+- Nineteen portable workflow prompts with Markdown references embedded.
 - A SHA-256 manifest for source files and generated artifacts.
 
 The builder reads every archive member back and compares bytes with the source.
@@ -54,9 +54,11 @@ confirm that docs, evaluation logs, and maintainer tools stay out of the plugin 
 
 ## Host evaluation suite
 
-The `evals/` directory has 31 fictional cases: one setup case and 30 across morning, meeting, follow-up,
-playbook, and decide: ten direct, ten indirect, and ten negative/missing-data
-requests. Claude Code 2.1.278 supports this native evaluation command:
+The `evals/` directory has 40 fictional cases: the original 31 setup and workflow cases,
+plus nine v0.3.0 regressions covering the five updated workflows, meeting-prep,
+and verify. They check source coverage, stale approvals, literal amounts,
+confidential-media boundaries, and unavailable independent review.
+Claude Code 2.1.281 supports this native evaluation command:
 
 ```sh
 claude plugin eval . --runs 1 --ablation with-without --no-publish --no-scaffold --trust-plugin --max-cost-usd 20 --output-dir /absolute/path/outside-this-repo

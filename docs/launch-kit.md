@@ -7,7 +7,7 @@ live until its acceptance and published URL have been verified.
 
 ## Message for a friend
 
-I built 16 free AI workflows for lawyers and law firm owners. They help with
+I built 18 free AI workflows for lawyers and law firm owners. They help with
 morning briefs, meeting follow-ups, decisions, and staff playbooks. Start with
 one workflow and a fictional example. Setup and source:
 https://sammollaei.github.io/law-firm-skills/
@@ -27,7 +27,7 @@ your accounts; you choose what notes or authorized tools it can use.
 
 Lawyers do not need another pile of prompts they never open.
 
-I built Law Firm Skills: 16 repeatable AI workflows for the actual week of a
+I built Law Firm Skills: 18 repeatable AI workflows for the actual week of a
 law firm owner. A morning brief. A meeting turned into accountable next steps.
 A process your team can follow without asking you the same questions again.
 

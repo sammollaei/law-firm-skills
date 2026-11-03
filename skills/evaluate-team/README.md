@@ -2,6 +2,9 @@
 
 Read the [skill instructions](SKILL.md).
 
+v0.3.0 aligns time windows and peer coverage, counts tasks by completion date,
+and preserves the exact reviewed report during approved publication.
+
 ## What you need
 
 Approved expectations, exact role/identity, comparable periods, and authorized outcome/QA records.

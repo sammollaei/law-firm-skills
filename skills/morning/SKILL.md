@@ -4,7 +4,7 @@ description: Review a law firm owner's inbox, messages, calendar, tasks, and ope
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.2.1"
+  version: "0.3.0"
 ---
 
 # Morning
@@ -33,8 +33,9 @@ Respect user-configured quiet hours, paused work, approval holds, and ownership.
 ## Work in order
 
 1. Check urgent deadlines, cancellations, new replies, and changes that make
-   older instructions obsolete. Surface legal or client-risk issues to the
-   designated responsible person. Do not calculate new legal deadlines from
+   older instructions obsolete. Flag legal or client-risk issues in the brief
+   for the designated responsible person; contacting them still requires
+   communication authority. Do not calculate new legal deadlines from
    assumptions or edit a matter's legal status.
 2. Review due commitments and verified operational problems. Match duplicate
    references by firm, source ID, and outcome. Read the complete selected thread
@@ -54,6 +55,24 @@ Work in manageable batches while preserving the full selected scope. One failed
 source should not block unrelated work, but its dependent actions remain held.
 Do not mark messages read, archive threads, move dates, or close tasks merely to
 make the brief shorter; those changes need authorization and their own readback.
+
+For each selected task or conversation, record one disposition: verified done
+or nothing owed; actionable within current authority; owner-only decision; or
+blocked by a named dependency. After execution, move actionable items to
+verified done or blocked. Show counts by source and disclose unread items.
+An owner saying "done" is a claim until the outcome can be checked.
+
+Before escalating a blocker, verify its premise against current records. A
+renewal date, price, staffing assumption, or requested change may already be
+obsolete. Explain the correction with evidence; do not close a task merely
+because it is old. For a real owner decision, prepare the recommendation,
+deciding facts, and proposed response. Saving a provider draft still requires
+authority and a check for newer drafts.
+
+When resolving a conversation, preserve any future commitment in the user's
+existing authorized tracking system. A reply or cleared inbox label does not
+mean the promised work is finished. Record the owner, expected result, and
+stated date; do not create a reminder or recurring job without authorization.
 
 ## Brief the owner
 

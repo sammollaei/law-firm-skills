@@ -4,7 +4,7 @@ description: Read an email thread, complete the work the user has authorized beh
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.2.1"
+  version: "0.3.0"
 ---
 
 # Email
@@ -62,6 +62,21 @@ Write in the user's preferred voice. Lead with the verified result, keep the
 message proportionate, and make the remaining ask concrete. Do not invent
 facts, promises, legal conclusions, dates, or an approval. Preserve an existing
 mail signature instead of duplicating it.
+
+Preserve literal currency amounts and other decision-driving text when building
+messages. Prefer structured arguments or a file-writing tool. If a shell is
+needed, use a quoted heredoc and pass paths separately; never interpolate the
+body into executable shell text. Compare amounts, dates, and names with their
+sources in both the saved request and rendered draft. A successful lint check
+alone does not establish that "$2,500" survived preparation unchanged.
+Corrupted output does not establish its technical cause. Treat shell expansion
+as a hypothesis unless the preparation code or execution evidence confirms it.
+
+Before saving or replacing a draft, reread the conversation and current draft.
+If another person or session has changed it, reconcile those changes first.
+Do not overwrite a newer draft with previously approved text or bypass a
+provider conflict response by creating another copy. Approval attaches to the
+actual content and recipients, not a remembered earlier version.
 
 Immediately before an authorized send, refresh the thread, draft contents,
 recipients, attachments, prior sends, and approval scope. Reconcile new replies

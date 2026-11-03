@@ -47,12 +47,12 @@ and [submission](https://developers.openai.com/plugins/deploy/submission).
 Requires Node.js 22.20 or newer and a working Git installation. Check with
 `node --version` and `git --version`. The installer is Vercel Labs' open-source
 [skills CLI](https://github.com/vercel-labs/skills), pinned to the version tested
-on October 15, 2026. It is separate from these skill instructions.
+on October 15, 2026 and retested for v0.3.0. It is separate from these skill instructions.
 
 Open a terminal in a new or existing project directory, then choose a command:
 
 ```sh
-# Preview the 16 workflows plus setup without installing them.
+# Preview the 18 workflows plus setup without installing them.
 npx --yes skills@1.7.2 add sammollaei/law-firm-skills --list
 
 # Install morning for Claude Code in this project.
@@ -189,6 +189,17 @@ The host must actually have the necessary tools to access mail, watch video,
 change tasks, or run calculators. Otherwise use supplied evidence and analysis
 only. Do not call a transcript-only review a full video review or a drafted
 reply a sent message. Respect context limits and report incomplete inputs.
+
+## Meeting preparation and verification
+
+Install meeting-prep or verify by replacing morning in the installer command.
+Claude plugin commands are /law-firm-skills:meeting-prep and
+/law-firm-skills:verify. Standalone Codex uses $meeting-prep and $verify.
+Meeting preparation can use supplied notes without connecting accounts.
+Verification can self-check supplied evidence; independent review additionally
+needs an authorized fresh session with the other provider and tools disabled.
+If that is unavailable, it reports the limit and supplies a manual handoff.
+No CLI launcher, automatic provider sign-in, or account connection is included.
 
 ## Optional local calculators
 

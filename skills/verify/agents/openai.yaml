@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify completed work"
+  short_description: "Check claims against evidence and independent review"
+  default_prompt: "Use $verify. Check this completed work against its claims, evidence, and an approved independent review."

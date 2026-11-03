@@ -3,7 +3,7 @@
 Practical AI workflows for lawyers and law firm owners.
 
 Review the morning's priorities, turn meetings into completed work, evaluate
-ideas, document handoffs, and plan the firm's growth. These 16 skills give an
+ideas, document handoffs, and plan the firm's growth. These 18 skills give an
 AI assistant a repeatable method, clear approval boundaries, and a standard
 for checking whether the work is actually done.
 
@@ -15,7 +15,7 @@ with [upstream attribution](THIRD_PARTY_NOTICES.md) preserved.
 
 Visit the [quick-start website](https://sammollaei.github.io/law-firm-skills/) for
 a simple catalog, a fictional first example, and installation choices. The
-collection includes 16 substantive workflows plus an optional setup skill.
+collection includes 18 substantive workflows plus an optional setup skill.
 
 ## Install the Claude Code plugin
 
@@ -75,9 +75,11 @@ skills, so check before copying or replacing a folder.
 |---|---|
 | [morning](skills/morning/README.md) | Review inboxes, messages, tasks, and metrics; finish authorized work and surface owner decisions. |
 | [watch](skills/watch/README.md) | Evaluate training videos and demos using transcripts and visual evidence. |
+| [verify](skills/verify/README.md) | Check claims against evidence and seek an authorized independent review. |
 | [build](skills/build/README.md) | Turn an idea into an approved specification, then build and verify it. |
 | [next](skills/next/README.md) | Choose the next worthwhile action, or decide to wait or stop. |
 | [link-review](skills/link-review/README.md) | Decide which articles, tools, posts, and repositories deserve attention. |
+| [meeting-prep](skills/meeting-prep/README.md) | Prepare a short brief with verified commitments and decisions to obtain. |
 | [meeting](skills/meeting/README.md) | Extract decisions and commitments, reconcile prior work, and execute approved actions. |
 | [friday](skills/friday/README.md) | Turn saved resources into a weekly report of useful ideas. |
 | [todoist](skills/todoist/README.md) | Work selected tasks, verify completion, and preserve deadlines and recurrence. |
@@ -107,6 +109,9 @@ a portable review workflow; a video download/transcription runtime is not bundle
 Only profit-plan and scale-plan include executable helpers. They use Node.js
 built-ins, read a supplied JSON file, print calculations, and make no network
 calls or writes. Their examples are fictional, not business benchmarks.
+The verify workflow
+uses an approved evidence packet and a separate reviewer; no automatic provider
+launcher or repository-reading agent is bundled.
 
 This plugin declares no MCP servers. With your authorization, workflows may use
 your host's existing tools to read sources, write workspace files, update connected
@@ -135,7 +140,10 @@ spending, filing, hiring, or changing a business system.
 Share the collection's repository page for the full catalog or a skill's folder
 page for one workflow. Keep the entire skill folder together when copying it,
 including its license and any references. This makes it possible to use one
-skill without installing the other 15.
+skill without installing the other 17.
+
+Latest release: **v0.3.0**, with 18 workflows plus setup. See the
+[release notes](docs/releases.md) and [Claude directory submission guide](docs/claude-submission.md).
 
 For maintainers: [validation and packaging](docs/validation.md),
 [contributing](CONTRIBUTING.md), and [license notices](THIRD_PARTY_NOTICES.md).

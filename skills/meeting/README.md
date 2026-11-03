@@ -2,6 +2,9 @@
 
 Read the [skill instructions](SKILL.md).
 
+v0.3.0 compares an optional prep brief with actual decisions and binds each
+approval to its action, source revision, destination, and content.
+
 ## What you need
 
 An accessible full transcript/recording and optional current work records.

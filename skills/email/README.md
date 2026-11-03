@@ -2,6 +2,9 @@
 
 Read the [skill instructions](SKILL.md).
 
+v0.3.0 checks literal amounts and dates during preparation and prevents stale
+approved text from overwriting a newer draft.
+
 ## What you need
 
 Current mailbox-thread access for live handling and explicit or scoped authority for writes/sends.

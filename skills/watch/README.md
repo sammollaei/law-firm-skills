@@ -2,6 +2,9 @@
 
 Read the [skill instructions](SKILL.md).
 
+v0.3.0 distinguishes local transcription from cloud analysis and checks
+material transcript details. No transcription runtime is bundled.
+
 ## What you need
 
 Native media tools, or a permitted transcript and timestamped visuals. No video runtime is bundled.

@@ -2,6 +2,9 @@
 
 Read the [skill instructions](SKILL.md).
 
+v0.3.0 adds explicit task/message dispositions, current-premise checks before
+escalation, and preservation of outstanding commitments.
+
 ## What you need
 
 Authorized inbox, messages, calendar, tasks, and metrics, or supplied exports. Execution needs existing scoped approval.
