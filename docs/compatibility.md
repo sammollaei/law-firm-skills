@@ -1,6 +1,6 @@
 # Compatibility and evidence
 
-Documentation updated November 6, 2026. Current package: v0.3.1. A shared file format does not guarantee
+Documentation updated November 6, 2026. Current package: v0.3.2. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
 
 | Host | Delivery route | Dated evidence (see version-specific results below) |
@@ -18,11 +18,13 @@ identical tool access, permissions, model behavior, or task completion.
 See [installation](installation.md) for the official sources and verification
 steps. The library has not been tested end to end on every platform.
 
-## v0.3.1 checks on November 6, 2026
+## v0.3.1 and v0.3.2 checks on November 6, 2026
 
-- v0.3.1 is v0.3.0 minus 14 files the Claude directory does not accept from
-  unverified publishers, with the two financial skills rewritten to show their
-  arithmetic in the open. The host results below were run on v0.3.0 and were not
+- v0.3.2 renames one license file so it has a `.txt` extension and otherwise
+  matches v0.3.1.
+- v0.3.1 is v0.3.0 minus 14 files, removed to meet the Claude directory's file-type
+  policy, with the two financial skills rewritten to show their arithmetic in the
+  open. The host results below were run on v0.3.0 and were not
   repeated, except as listed here.
 - Claude Code 2.1.281 passes strict plugin/marketplace validation.
 - A fresh model session applied both calculation contracts without running code,

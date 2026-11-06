@@ -202,7 +202,7 @@ No CLI launcher, automatic provider sign-in, or account connection is included.
 
 ## Calculators
 
-The v0.3.1 Claude directory edition has no executable files. Profit-plan and
+The v0.3.2 Claude directory edition has no executable files. Profit-plan and
 scale-plan show their arithmetic in the open from each skill's calculation
 contract. The [v0.3.0 GitHub release](https://github.com/sammollaei/law-firm-skills/releases/tag/v0.3.0)
 still includes tested Node.js 18+ calculators for those two skills. They use

@@ -4,7 +4,7 @@ description: Compare the most worthwhile next actions across a lawyer's or law f
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.1"
+  version: "0.3.2"
 ---
 
 # Next

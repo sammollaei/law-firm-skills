@@ -4,7 +4,7 @@ description: Reconcile law firm team commitments against current replies and del
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.1"
+  version: "0.3.2"
 ---
 
 # Follow-up

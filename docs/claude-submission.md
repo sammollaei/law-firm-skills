@@ -1,8 +1,8 @@
-# Submit v0.3.1 to the Claude directory
+# Submit v0.3.2 to the Claude directory
 
-Release: [v0.3.1](https://github.com/sammollaei/law-firm-skills/releases/tag/v0.3.1).
+Release: [v0.3.2](https://github.com/sammollaei/law-firm-skills/releases/tag/v0.3.2).
 Source: sammollaei/law-firm-skills. Plugin path: repository root (empty).
-Version in .claude-plugin/plugin.json: 0.3.1. Select tag v0.3.1 for this release.
+Version in .claude-plugin/plugin.json: 0.3.2. Select tag v0.3.2 for this release.
 
 ## Verify the source
 
@@ -21,8 +21,8 @@ before creating another. If it is locked to an older tag, preserve its listing
 details and resolve that obsolete draft with the publisher's authorization.
 Do not submit the old version or move an existing release tag.
 
-Validate the exact v0.3.1 source, review listing details, and resolve every
-reported finding. If a finding needs source changes after v0.3.1 is tagged,
+Validate the exact v0.3.2 source, review listing details, and resolve every
+reported finding. If a finding needs source changes after v0.3.2 is tagged,
 prepare a new patch release for publisher review; never move the old tag or
 silently submit a different version. Data-handling answers must describe actual behavior: the
 package has no author-operated data service or declared MCP servers, but the

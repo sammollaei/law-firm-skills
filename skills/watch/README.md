@@ -32,7 +32,7 @@ The reminder idea can be assessed as a proposal; the chart and claimed result re
 This is an acceptance example, not a claim that every AI platform has been
 live tested. Check the actual output and any missing-access disclosures.
 
-This workflow is an adaptation. Read the [upstream notice](THIRD_PARTY_NOTICES.md) and [license](UPSTREAM_LICENSE).
+This workflow is an adaptation. Read the [upstream notice](THIRD_PARTY_NOTICES.md) and [license](UPSTREAM_LICENSE.txt).
 
 ## License
 

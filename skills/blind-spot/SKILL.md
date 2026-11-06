@@ -4,7 +4,7 @@ description: Find overlooked assumptions and binding bottlenecks preventing a la
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.1"
+  version: "0.3.2"
 ---
 
 # Blind spot

@@ -4,7 +4,7 @@ description: Check completed work against explicit claims and primary evidence, 
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.1"
+  version: "0.3.2"
 ---
 
 # Verify

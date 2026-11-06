@@ -4,7 +4,7 @@ The watch workflow adapts the transcript, timestamped visual evidence, source-co
 and evidence-reuse approach of [claude-video](https://github.com/bradautomates/claude-video)
 by bradautomates (Bradley Bonanno), distributed under the MIT License.
 
-The [upstream copyright and license](UPSTREAM_LICENSE) are preserved with this skill.
+The [upstream copyright and license](UPSTREAM_LICENSE.txt) are preserved with this skill.
 The law firm framing, portable host-tool instructions, and public packaging are
 adaptations by Sam Mollaei. No upstream downloader, transcription client,
 credentials, or executable video runtime is bundled in this release.

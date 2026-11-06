@@ -142,7 +142,7 @@ page for one workflow. Keep the entire skill folder together when copying it,
 including its license and any references. This makes it possible to use one
 skill without installing the other 17.
 
-Latest release: **v0.3.1**, the Claude directory edition, with 18 workflows plus setup. See the
+Latest release: **v0.3.2**, the Claude directory edition, with 18 workflows plus setup. See the
 [release notes](docs/releases.md) and [Claude directory submission guide](docs/claude-submission.md).
 
 For maintainers: [validation and packaging](docs/validation.md),

@@ -3,7 +3,7 @@
 The watch skill includes attributed workflow adaptations from
 [bradautomates/claude-video](https://github.com/bradautomates/claude-video).
 Its [notice](skills/watch/THIRD_PARTY_NOTICES.md) and
-[original MIT license](skills/watch/UPSTREAM_LICENSE) travel with the individual skill.
+[original MIT license](skills/watch/UPSTREAM_LICENSE.txt) travel with the individual skill.
 
 Original collection material is Copyright (c) 2026 Sam Mollaei under the
 [MIT License](LICENSE). Preserve applicable copyright and license notices when

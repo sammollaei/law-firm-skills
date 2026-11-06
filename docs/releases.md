@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.3.2
+
+Claude directory edition. Rename `skills/watch/UPSTREAM_LICENSE` to
+`UPSTREAM_LICENSE.txt`, because the directory's file-type policy blocked v0.3.1 on
+that one extensionless file. The license text is unchanged.
+
 ## v0.3.1
 
 Claude directory edition. The directory accepts only Markdown, text, JSON, YAML,
