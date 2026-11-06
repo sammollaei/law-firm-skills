@@ -203,7 +203,9 @@ No CLI launcher, automatic provider sign-in, or account connection is included.
 
 ## Optional local calculators
 
-Only profit-plan and scale-plan include executable helpers. They require
+The Claude directory edition (v0.3.1) has no executable files; there, profit-plan
+and scale-plan show their arithmetic in the open from each skill's calculation
+contract. In this GitHub edition, only profit-plan and scale-plan include executable helpers. They require
 Node.js 18 or newer, use built-in modules, and need no package installation.
 From the downloaded collection root, try fictional data:
 

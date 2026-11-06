@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.3.1
+
+Claude directory edition, on its own tag and not merged into this branch. The
+directory accepts only Markdown, text, JSON, YAML, and image files from publishers
+it has not verified, so v0.3.1 removes the calculators, website sources, SVG icon,
+and release tools. Profit-plan and scale-plan show their arithmetic in the open
+there. This branch keeps the full v0.3.0 package.
+
 ## v0.3.0
 
 18 workflows plus guided setup, by Sam Mollaei under MIT.
