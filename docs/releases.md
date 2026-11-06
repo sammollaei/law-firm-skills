@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.3.2
+
+Claude directory edition, on its own tag. Adds a `.txt` extension to the watch
+skill's upstream license file, because the directory's file-type policy blocked
+v0.3.1 on it. The license text is unchanged.
+
 ## v0.3.1
 
 Claude directory edition, on its own tag and not merged into this branch. The
