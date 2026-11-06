@@ -4,12 +4,12 @@ description: Reconcile a law firm's accounting profit, collected fees, acquisiti
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # Profit plan
 
-Requirements: Authorized financial records or supplied exports are required. The optional local calculator uses Node.js 18 or newer and no external packages; its normalized money inputs are USD cents.
+Requirements: Authorized financial records or supplied exports are required. Calculations are shown as open arithmetic; nothing is executed. Normalized money inputs are USD cents.
 
 Recommend the next change that could improve total firm profit under the user's
 actual quality, cash, and owner-workload constraints. Holding course or resolving
@@ -49,18 +49,14 @@ net income twice. Never infer usable client funds from a gross settlement.
 
 ## Calculate and challenge
 
-Read [the calculation contract](references/calculations.md) before using the
-bundled helper. From this skill directory run:
-
-```sh
-node scripts/calculate.mjs /path/to/private-input.json
-```
-
-The helper reads supplied JSON, prints arithmetic, and has no network calls or
-writes. It validates neither source truth nor identity joins. Its cohort model
-uses open/settled/lost cases and USD cents; use transparent sourced calculations
-for other currencies or fee models instead of forcing incompatible data into it.
-Keep real input files outside the repository and installed skill folder.
+Read [the calculation contract](references/calculations.md) before calculating.
+Apply its checks and formulas to normalized inputs, show each input and step, and
+re-add the totals before reporting. A failed check stops the calculation; do not
+estimate around it. This arithmetic validates neither source truth nor identity
+joins. The cohort model uses open/settled/lost cases and USD cents; use
+transparent sourced calculations for other currencies or fee models instead of
+forcing incompatible data into it. Keep real input files outside the repository
+and installed skill folder.
 
 Compare a few credible levers: case mix/acquisition, attrition, throughput,
 fee realization, or avoidable cost. For at most three moves, give the baseline,

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "law-firm-skills",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Practice-management workflows for lawyers and law firm owners: daily briefs, meeting actions, follow-ups, decisions, and staff playbooks.",
   "author": {
     "name": "Sam Mollaei",
@@ -22,7 +22,7 @@
       "interface": {
         "displayName": "Law Firm Skills",
         "shortDescription": "Daily law firm workflows",
-        "longDescription": "Plan your law firm's day, turn meeting notes into accountable next steps, review team commitments, and document repeatable processes. Includes 18 workflows plus guided setup. Start with supplied notes or use tools you have already authorized in your AI workspace. This skills-only package does not connect your email or case-management system. Financial workflows include optional Node.js helpers; script execution depends on the host. Independent verification needs a separately authorized reviewer and approved evidence packet.",
+        "longDescription": "Plan your law firm's day, turn meeting notes into accountable next steps, review team commitments, and document repeatable processes. Includes 18 workflows plus guided setup. Start with supplied notes or use tools you have already authorized in your AI workspace. This skills-only package does not connect your email or case-management system. Independent verification needs a separately authorized reviewer and approved evidence packet.",
         "developerName": "Sam Mollaei",
         "category": "Productivity",
         "capabilities": [

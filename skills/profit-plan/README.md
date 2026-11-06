@@ -4,7 +4,7 @@ Read the [skill instructions](SKILL.md).
 
 ## What you need
 
-Authorized financial evidence or hypothetical inputs. Optional calculator: Node.js 18+, no packages, USD cents only.
+Authorized financial evidence or hypothetical inputs. Calculations use USD cents and are shown as open arithmetic.
 
 ## Install or use
 
@@ -29,13 +29,10 @@ The documented fictional arithmetic is $160,000 monthly profit, a $40,000 goal g
 This is an acceptance example, not a claim that every AI platform has been
 live tested. Check the actual output and any missing-access disclosures.
 
-Try the offline calculator from this folder:
-
-```sh
-node scripts/calculate.mjs examples/fictional-input.json
-```
-
-Read the [input contract](references/calculations.md) first. Real inputs belong
+Try the arithmetic by asking the assistant to apply the
+[calculation contract](references/calculations.md) to
+`examples/fictional-input.json`, then compare its figures with the ones the
+contract states. Real inputs belong
 outside the installed skill folder. The bundled input is fictional.
 
 ## License

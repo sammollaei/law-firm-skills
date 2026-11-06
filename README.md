@@ -106,9 +106,10 @@ tools and the access you choose. Without them, the assistant can review supplied
 material and must disclose what it could not verify. The watch skill includes
 a portable review workflow; a video download/transcription runtime is not bundled.
 
-Only profit-plan and scale-plan include executable helpers. They use Node.js
-built-ins, read a supplied JSON file, print calculations, and make no network
-calls or writes. Their examples are fictional, not business benchmarks.
+This edition has no executable files. Profit-plan and scale-plan show their
+arithmetic in the open from a written calculation contract. Their examples are
+fictional, not business benchmarks. Tested Node.js calculators remain in the
+[v0.3.0 GitHub release](https://github.com/sammollaei/law-firm-skills/releases/tag/v0.3.0).
 The verify workflow
 uses an approved evidence packet and a separate reviewer; no automatic provider
 launcher or repository-reading agent is bundled.
@@ -116,8 +117,7 @@ launcher or repository-reading agent is bundled.
 This plugin declares no MCP servers. With your authorization, workflows may use
 your host's existing tools to read sources, write workspace files, update connected
 systems, or send approved communications. Those tools and providers handle their
-own data; the collection has no author-operated data service. Local calculator
-helpers run in the host's permitted execution environment, outside MCP servers.
+own data; the collection has no author-operated data service.
 
 [Privacy](https://sammollaei.github.io/law-firm-skills/privacy.html) |
 [Support](https://sammollaei.github.io/law-firm-skills/support.html) |
@@ -142,7 +142,7 @@ page for one workflow. Keep the entire skill folder together when copying it,
 including its license and any references. This makes it possible to use one
 skill without installing the other 17.
 
-Latest release: **v0.3.0**, with 18 workflows plus setup. See the
+Latest release: **v0.3.1**, the Claude directory edition, with 18 workflows plus setup. See the
 [release notes](docs/releases.md) and [Claude directory submission guide](docs/claude-submission.md).
 
 For maintainers: [validation and packaging](docs/validation.md),

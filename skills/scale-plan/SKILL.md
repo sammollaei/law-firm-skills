@@ -4,12 +4,12 @@ description: Work backward from a law firm's growth target to model required dem
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # Scale plan
 
-Requirements: Requires authorized operating data or supplied assumptions. The optional local calculator uses Node.js 18 or newer with no external packages.
+Requirements: Requires authorized operating data or supplied assumptions. Calculations are shown as open arithmetic; nothing is executed.
 
 Recommend a feasible sequence for growth under the firm's actual constraints.
 Holding volume steady or removing work can be preferable to more acquisition.
@@ -58,18 +58,12 @@ or fill missing inputs to force the target to work. For each show:
   and owner workload through the target date.
 - Quality conditions, weakest assumptions, and expand/hold/stop criteria.
 
-Read [the calculation contract](references/calculations.md). From this skill
-directory, run one normalized scenario at a time:
-
-```sh
-node scripts/calculate.mjs /path/to/private-scenario.json
-```
-
-The local helper reads JSON and prints arithmetic; it fetches nothing and writes
-nothing. It supports explicit currencies/minor units, additive shared-resource
-loads, serial conversion chains, and monthly cash balances. It does not validate
-the source or forecast deadline attainment. Handle branching, stocks/churn,
-stage delays, and mixed matters transparently outside unsupported helper shapes.
+Read [the calculation contract](references/calculations.md). Apply it to one
+normalized scenario at a time, show each input and step, and recompute the totals
+before reporting. It covers explicit currencies/minor units, additive
+shared-resource loads, serial conversion chains, and monthly cash balances. It
+does not validate the source or forecast deadline attainment. Handle branching,
+stocks/churn, stage delays, and mixed matters transparently and separately.
 Reconcile flow units with financial units and workload; they are not linked
 automatically. Round indivisible units up and recalculate costs and capacity.
 

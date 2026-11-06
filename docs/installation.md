@@ -153,9 +153,8 @@ not assume arbitrary GitHub-folder import works in every account.
 
 Saving affects the account's shared private skill library. Review an existing
 same-name skill before replacing it. Each bot still needs appropriate source
-access. For the two financial helpers, the full package also contains scripts;
-running them requires a host that supports Node.js and local files. A text-only
-saved skill cannot execute a script merely because it mentions its filename.
+access. The two financial skills show their arithmetic in the open, so they need
+no script execution in this edition.
 
 Source: [Grok Bot skills and routines](https://docs.x.ai/grok-bot/skills-routines-and-automations).
 This collection creates no routines or scheduled jobs during installation.
@@ -201,19 +200,13 @@ needs an authorized fresh session with the other provider and tools disabled.
 If that is unavailable, it reports the limit and supplies a manual handoff.
 No CLI launcher, automatic provider sign-in, or account connection is included.
 
-## Optional local calculators
+## Calculators
 
-Only profit-plan and scale-plan include executable helpers. They require
-Node.js 18 or newer, use built-in modules, and need no package installation.
-From the downloaded collection root, try fictional data:
-
-```sh
-node skills/profit-plan/scripts/calculate.mjs skills/profit-plan/examples/fictional-input.json
-node skills/scale-plan/scripts/calculate.mjs skills/scale-plan/examples/fictional-input.json
-```
-
-These commands print JSON and do not fetch or write data. Use the documented
-input contracts for real analysis and keep actual inputs outside the collection.
+The v0.3.1 Claude directory edition has no executable files. Profit-plan and
+scale-plan show their arithmetic in the open from each skill's calculation
+contract. The [v0.3.0 GitHub release](https://github.com/sammollaei/law-firm-skills/releases/tag/v0.3.0)
+still includes tested Node.js 18+ calculators for those two skills. They use
+built-in modules, print JSON, and do not fetch or write data.
 
 ## Updates and removal
 

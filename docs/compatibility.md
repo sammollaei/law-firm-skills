@@ -1,6 +1,6 @@
 # Compatibility and evidence
 
-Documentation updated November 3, 2026. Current package: v0.3.0. A shared file format does not guarantee
+Documentation updated November 6, 2026. Current package: v0.3.1. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
 
 | Host | Delivery route | Dated evidence (see version-specific results below) |
@@ -17,6 +17,17 @@ identical tool access, permissions, model behavior, or task completion.
 
 See [installation](installation.md) for the official sources and verification
 steps. The library has not been tested end to end on every platform.
+
+## v0.3.1 checks on November 6, 2026
+
+- v0.3.1 is v0.3.0 minus 14 files the Claude directory does not accept from
+  unverified publishers, with the two financial skills rewritten to show their
+  arithmetic in the open. The host results below were run on v0.3.0 and were not
+  repeated, except as listed here.
+- Claude Code 2.1.281 passes strict plugin/marketplace validation.
+- A fresh model session applied both calculation contracts without running code,
+  and its figures matched the v0.3.0 calculators on the fictional examples and
+  on boundary inputs.
 
 ## v0.3.0 checks on November 3, 2026
 
@@ -78,9 +89,9 @@ earlier discovery results below do not establish v0.3.0 compatibility.
   None are bundled, provisioned, or linked to the author's systems.
 - Video review requires readable speech and sufficient visual evidence for
   the question. The portable watch skill bundles no download/transcription runtime.
-- The local profit calculator uses USD cents and a normalized case cohort.
-  The scale calculator uses explicit currencies, units, and scenario assumptions.
-  Their offline tests establish arithmetic behavior, not a financial forecast.
+- The profit contract uses USD cents and a normalized case cohort. The scale
+  contract uses explicit currencies, units, and scenario assumptions. Neither is
+  a financial forecast. The v0.3.0 calculators and their tests are in that release.
 - A standalone prompt contains Markdown references and notices. It does not
   grant code execution, install script files, or provide service credentials.
 

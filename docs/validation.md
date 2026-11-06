@@ -1,24 +1,21 @@
-# Validation and packaging
+# Validation
 
-Run from the collection root. These checks require Python 3.10+ and Node.js 18+,
-use existing runtimes and standard libraries, and make no network calls:
+The v0.3.1 Claude directory edition contains Markdown, text, JSON, YAML, license,
+and PNG files only. Run strict validation from the collection root with Claude
+Code 2.1.281 or newer:
 
 ```sh
-PYTHONDONTWRITEBYTECODE=1 python3 tools/check_release.py
-PYTHONDONTWRITEBYTECODE=1 python3 tools/test_release.py
-node --test skills/profit-plan/scripts/calculate.test.mjs skills/scale-plan/scripts/calculate.test.mjs
+claude plugin validate --strict .
 ```
 
-The structural checker validates an explicit file allowlist, conservative
-metadata, ASCII text, local links, skill-local references, and license presence.
-It refuses unexpected files without reading their contents. This is useful
-release containment, not a guarantee that arbitrary future prose is free of
-private information. Review every changed file before publication.
+Then apply each financial skill's calculation contract to its fictional example
+and confirm the figures the contract states. That checks arithmetic on fictional
+inputs, not the truth or completeness of real firm records.
 
-The calculator tests cover missing versus zero data, duplicate IDs, incorrect
-entity/units, unconfirmed receipts, incomplete cohorts, negative contribution,
-capacity overload, cash delays, and invalid CLI input. They establish arithmetic
-on fictional inputs, not the truth or completeness of real firm records.
+The website, release tooling, reproducible ZIP builder, and tested Node.js
+calculators are not part of this edition. They remain in the
+[v0.3.0 source](https://github.com/sammollaei/law-firm-skills/tree/v0.3.0) and on
+the main branch.
 
 Each skill README includes a fictional behavioral acceptance example. Review
 the output against it in the intended host, including missing-access and
@@ -26,31 +23,6 @@ approval behavior. Static checks do not establish that a model follows a rule.
 The [compatibility matrix](compatibility.md) distinguishes documented routes
 from live runtime tests. No real mailbox or client-data actions are needed to
 test these examples.
-
-## Build local shareable files
-
-Choose a new output directory outside the source tree:
-
-```sh
-PYTHONDONTWRITEBYTECODE=1 python3 tools/build_release.py --output ../law-firm-skills-release
-```
-
-The builder refuses existing output, symlinks, unexpected files, and broken
-local references. It packages only the explicit allowlist. Output contains:
-
-- One complete source ZIP with no Git history.
-- One plugin ZIP with plugin.json at its root, skills, assets, and notices.
-- Nineteen single-skill ZIPs (18 workflows plus setup), preserving local resources.
-- Nineteen portable workflow prompts with Markdown references embedded.
-- A SHA-256 manifest for source files and generated artifacts.
-
-The builder reads every archive member back and compares bytes with the source.
-ZIP member dates and permissions are fixed for reproducible packaging. Prompts
-do not contain executable helpers; use a full skill package for the calculators.
-
-The export regression checks build twice and compare every output byte, verify
-all standalone payloads, reject unexpected files without reading them, and
-confirm that docs, evaluation logs, and maintainer tools stay out of the plugin ZIP.
 
 ## Host evaluation suite
 

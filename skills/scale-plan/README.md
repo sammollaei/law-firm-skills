@@ -4,7 +4,7 @@ Read the [skill instructions](SKILL.md).
 
 ## What you need
 
-Goal, fee model, demand, shared capacity, cash timing, and owner limits. Optional calculator: Node.js 18+, no packages.
+Goal, fee model, demand, shared capacity, cash timing, and owner limits. Calculations are shown as open arithmetic.
 
 ## Install or use
 
@@ -29,13 +29,10 @@ The sample has a 10-hour review-capacity shortfall, five owner hours over the li
 This is an acceptance example, not a claim that every AI platform has been
 live tested. Check the actual output and any missing-access disclosures.
 
-Try the offline calculator from this folder:
-
-```sh
-node scripts/calculate.mjs examples/fictional-input.json
-```
-
-Read the [input contract](references/calculations.md) first. Real inputs belong
+Try the arithmetic by asking the assistant to apply the
+[calculation contract](references/calculations.md) to
+`examples/fictional-input.json`, then compare its figures with the ones the
+contract states. Real inputs belong
 outside the installed skill folder. The bundled input is fictional.
 
 ## License

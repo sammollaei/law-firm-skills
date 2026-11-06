@@ -1,5 +1,21 @@
 # Release notes
 
+## v0.3.1
+
+Claude directory edition. The directory accepts only Markdown, text, JSON, YAML,
+and image files from publishers it has not verified, so this release removes 14
+files from v0.3.0.
+
+- Removed: the Node.js calculators and their tests from profit-plan and
+  scale-plan, the website sources, the SVG icon, and the release tools.
+- Profit-plan and scale-plan now show their arithmetic in the open from an
+  expanded calculation contract, with the same formulas and failed-check rules.
+  Calculation accuracy now depends on the assistant and on review of the shown
+  work, not on tested code.
+- The other 17 skills change only their version number.
+
+v0.3.0 is unchanged and keeps the calculators, website, and release tools.
+
 ## v0.3.0
 
 18 workflows plus guided setup, by Sam Mollaei under MIT.

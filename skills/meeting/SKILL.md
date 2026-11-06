@@ -4,7 +4,7 @@ description: Turn a law firm meeting recording or transcript into verified decis
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.0"
+  version: "0.3.1"
 ---
 
 # Meeting
