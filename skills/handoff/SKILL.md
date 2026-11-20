@@ -4,7 +4,7 @@ description: Prepare a brief so another session or authorized colleague can resu
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.4.0"
+  version: "0.5.0"
 ---
 
 # Handoff

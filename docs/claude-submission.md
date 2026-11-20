@@ -1,13 +1,13 @@
-# Submit v0.4.0-claude to the Claude directory
+# Submit v0.5.0-claude to the Claude directory
 
-Release: [v0.4.0-claude](https://github.com/sammollaei/law-firm-skills/tree/v0.4.0-claude).
+Release: [v0.5.0-claude](https://github.com/sammollaei/law-firm-skills/tree/v0.5.0-claude).
 Source: sammollaei/law-firm-skills. Plugin path: repository root (empty).
-Version in .claude-plugin/plugin.json: 0.4.0. Select tag v0.4.0-claude for this release.
+Version in .claude-plugin/plugin.json: 0.5.0. Select tag v0.5.0-claude for this release.
 
 ## Verify the source
 
 Match the tag's commit to the release and confirm the manifest version and
-20 skill folders: 19 workflows plus setup. Read the
+24 skill folders: 23 workflows plus setup. Read the
 [compatibility record](compatibility.md), [privacy disclosure](https://sammollaei.github.io/law-firm-skills/privacy.html),
 [README](../README.md), and [release notes](releases.md). Run strict local plugin
 validation with Claude Code 2.1.281 or newer. Older
@@ -21,8 +21,8 @@ before creating another. If it is locked to an older tag, preserve its listing
 details and resolve that obsolete draft with the publisher's authorization.
 Do not submit the old version or move an existing release tag.
 
-Validate the exact v0.4.0-claude source, review listing details, and resolve every
-reported finding. If a finding needs source changes after v0.4.0-claude is tagged,
+Validate the exact v0.5.0-claude source, review listing details, and resolve every
+reported finding. If a finding needs source changes after v0.5.0-claude is tagged,
 prepare a new patch release for publisher review; never move the old tag or
 silently submit a different version. Data-handling answers must describe actual behavior: the
 package has no author-operated data service or declared MCP servers, but the

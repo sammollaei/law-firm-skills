@@ -1,5 +1,11 @@
 # Release notes
 
+## v0.5.0
+
+Adds ship-or-kill, fix, weekend and learn-from-the-best. Includes 23 workflows
+plus guided setup. Get the full edition at v0.5.0 or the script-free Claude
+directory source at v0.5.0-claude. Both manifests identify version 0.5.0.
+
 ## v0.4.0
 
 Adds handoff and updates morning, email and watch. Includes 19 workflows plus setup.

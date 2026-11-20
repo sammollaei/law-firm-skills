@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project repair review"
+  short_description: "Find and verify scoped project repairs"
+  default_prompt: "Use $fix with the supplied evidence and review scope."

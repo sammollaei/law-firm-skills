@@ -1,0 +1,4 @@
+interface:
+  display_name: "Benchmark a practice"
+  short_description: "Benchmark one practice against evidence"
+  default_prompt: "Use $learn-from-the-best with the supplied evidence and review scope."
