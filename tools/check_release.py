@@ -24,7 +24,11 @@ ROOT_FILES = {"README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md
               ".claude-plugin/marketplace.json", ".agents/plugins/marketplace.json", "assets/icon.svg", "assets/icon.png"}
 DOCS = {"installation.md", "configuration.md", "compatibility.md", "validation.md",
         "index.html", "styles.css", "privacy.html", "terms.html", "support.html", ".nojekyll",
-        "launch-kit.md", "releases.md", "claude-submission.md"}
+        "launch-kit.md", "releases.md", "claude-submission.md",
+        "morning.html", "meeting.html", "handoff.html", "robots.txt", "sitemap.xml",
+        "preview-home.png", "preview-morning.png", "preview-meeting.png", "preview-handoff.png"}
+PREVIEWS = {f"docs/{name}" for name in (
+    "preview-home.png", "preview-morning.png", "preview-meeting.png", "preview-handoff.png")}
 TOOLS = {"check_release.py", "build_release.py", "test_release.py"}
 EVAL_CASES = tuple(f"{skill}-{kind}-{letter}" for skill in
                    ("morning", "meeting", "follow-up", "playbook", "decide")
@@ -101,11 +105,12 @@ def check(root=ROOT):
         path = root / item
         if path.is_symlink() or not path.resolve().is_relative_to(root):
             continue
-        if item == "assets/icon.png":
+        if item == "assets/icon.png" or item in PREVIEWS:
             body = path.read_bytes()
+            expected_size = (512, 512) if item == "assets/icon.png" else (1200, 630)
             if (body[:8] != b"\x89PNG\r\n\x1a\n" or len(body) < 33
-                    or struct.unpack(">II", body[16:24]) != (512, 512)):
-                errors.append("invalid 512px PNG icon")
+                    or struct.unpack(">II", body[16:24]) != expected_size):
+                errors.append(f"invalid PNG {expected_size[0]}x{expected_size[1]}: {item}")
             continue
         try:
             text = path.read_text(encoding="utf-8")
