@@ -3,7 +3,7 @@
 Practical AI workflows for lawyers and law firm owners.
 
 Review the morning's priorities, turn meetings into completed work, evaluate
-ideas, document handoffs, and plan the firm's growth. These 18 skills give an
+ideas, document handoffs, and plan the firm's growth. These 19 skills give an
 AI assistant a repeatable method, clear approval boundaries, and a standard
 for checking whether the work is actually done.
 
@@ -15,7 +15,9 @@ with [upstream attribution](THIRD_PARTY_NOTICES.md) preserved.
 
 Visit the [quick-start website](https://sammollaei.github.io/law-firm-skills/) for
 a simple catalog, a fictional first example, and installation choices. The
-collection includes 18 substantive workflows plus an optional setup skill.
+collection includes 19 substantive workflows plus an optional setup skill.
+
+For the script-free Claude edition, follow the [pinned installation steps](docs/installation.md#install-the-pinned-claude-directory-edition-from-github).
 
 ## Install the Claude Code plugin
 
@@ -73,6 +75,7 @@ skills, so check before copying or replacing a folder.
 
 | Skill | What it helps you do |
 |---|---|
+| [handoff](skills/handoff/README.md) | Give the next session a brief with verified progress and one next action. |
 | [morning](skills/morning/README.md) | Review inboxes, messages, tasks, and metrics; finish authorized work and surface owner decisions. |
 | [watch](skills/watch/README.md) | Evaluate training videos and demos using transcripts and visual evidence. |
 | [verify](skills/verify/README.md) | Check claims against evidence and seek an authorized independent review. |
@@ -140,9 +143,9 @@ spending, filing, hiring, or changing a business system.
 Share the collection's repository page for the full catalog or a skill's folder
 page for one workflow. Keep the entire skill folder together when copying it,
 including its license and any references. This makes it possible to use one
-skill without installing the other 17.
+skill without installing the other 18.
 
-Latest release: **v0.3.0**, with 18 workflows plus setup. See the
+Latest release: **v0.4.0**, with 19 workflows plus setup. See the
 [release notes](docs/releases.md) and [Claude directory submission guide](docs/claude-submission.md).
 
 For maintainers: [validation and packaging](docs/validation.md),

@@ -1,5 +1,12 @@
 # Release notes
 
+## v0.4.0
+
+Adds handoff and updates morning, email and watch. Includes 19 workflows plus setup.
+The full package is tagged v0.4.0. The script-free Claude directory source
+is tagged v0.4.0-claude with the same manifest version.
+
+
 ## v0.3.2
 
 Claude directory edition, on its own tag. Adds a `.txt` extension to the watch

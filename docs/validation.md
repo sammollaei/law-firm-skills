@@ -40,8 +40,8 @@ local references. It packages only the explicit allowlist. Output contains:
 
 - One complete source ZIP with no Git history.
 - One plugin ZIP with plugin.json at its root, skills, assets, and notices.
-- Nineteen single-skill ZIPs (18 workflows plus setup), preserving local resources.
-- Nineteen portable workflow prompts with Markdown references embedded.
+- Twenty single-skill ZIPs (19 workflows plus setup), preserving local resources.
+- Twenty portable workflow prompts with Markdown references embedded.
 - A SHA-256 manifest for source files and generated artifacts.
 
 The builder reads every archive member back and compares bytes with the source.
@@ -54,7 +54,8 @@ confirm that docs, evaluation logs, and maintainer tools stay out of the plugin 
 
 ## Host evaluation suite
 
-The `evals/` directory has 40 fictional cases: the original 31 setup and workflow cases,
+The `evals/` directory has 44 fictional cases: the original 31 setup and workflow cases,
+four v0.4.0 regressions for morning, email, watch and handoff,
 plus nine v0.3.0 regressions covering the five updated workflows, meeting-prep,
 and verify. They check source coverage, stale approvals, literal amounts,
 confidential-media boundaries, and unavailable independent review.

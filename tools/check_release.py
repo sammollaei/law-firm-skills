@@ -15,9 +15,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILLS = (
     "morning", "watch", "build", "next", "link-review", "meeting", "friday",
     "todoist", "blind-spot", "decide", "evaluate-team", "email", "profit-plan",
-    "follow-up", "scale-plan", "playbook", "verify", "meeting-prep", "setup",
+    "follow-up", "scale-plan", "playbook", "verify", "meeting-prep", "handoff", "setup",
 )
-VERSION = "0.3.0"
+VERSION = "0.4.0"
 ROOT_FILES = {"README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md", ".gitignore",
               "plugin.json", "skills.sh.json", ".claude-plugin/plugin.json",
               ".claude-plugin/marketplace.json", ".agents/plugins/marketplace.json", "assets/icon.svg", "assets/icon.png"}
@@ -28,6 +28,7 @@ TOOLS = {"check_release.py", "build_release.py", "test_release.py"}
 EVAL_CASES = tuple(f"{skill}-{kind}-{letter}" for skill in
                    ("morning", "meeting", "follow-up", "playbook", "decide")
                    for kind in ("direct", "indirect", "negative") for letter in ("a", "b")) + ("setup-first-run",
+    "v040-morning-pages", "v040-email-authorship", "v040-watch-gap", "v040-handoff-proof",
     "v030-morning-premise", "v030-meeting-revision", "v030-email-literals",
     "v030-watch-local", "v030-team-window", "v030-meeting-prep-basic",
     "v030-meeting-prep-match", "v030-verify-unavailable", "v030-verify-coverage",

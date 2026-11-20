@@ -4,13 +4,13 @@ description: Help a lawyer, law firm owner, or practice manager get started with
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.0"
+  version: "0.4.0"
 ---
 
 # Get started with Law Firm Skills
 
 Help the user get one useful result with minimal setup. This collection contains
-18 practice-management workflows plus this onboarding skill. Installation grants
+19 practice-management workflows plus this onboarding skill. Installation grants
 no access to accounts, permission to act, or ongoing background work.
 
 ## First conversation

@@ -4,7 +4,7 @@ description: Review a video using its transcript and visual evidence, extract us
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.0"
+  version: "0.4.0"
 ---
 
 # Watch
@@ -21,8 +21,13 @@ transcripts and timestamped frames. Tool availability determines coverage.
 ## Establish the source
 
 Resolve the exact URL or file and requested scope. Reuse evidence already
-inspected for this recording; fetch again only for missing evidence, a changed
-source, or a newly requested interval. Distinguish a full review from a named
+inspected for this recording when its version, time interval and type match
+the question. Preserve the source timestamp format and units. Label reused evidence and identify any skipped or failed
+transcription intervals. A partial transcript stays partial on later runs.
+For an on-screen claim, inspect frames covering the requested moment. If those
+frames are unavailable, say what the speech supports and leave the visual
+claim unverified. Refresh evidence when the source changes or the user asks.
+Respect the user's storage settings before retaining media, frames or text. Distinguish a full review from a named
 moment or an explicitly speech-only question.
 
 Check confidentiality and the user's approved processing environment before
