@@ -4,7 +4,7 @@ description: Work backward from a law firm's growth target to model required dem
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.2"
+  version: "0.4.0"
 ---
 
 # Scale plan

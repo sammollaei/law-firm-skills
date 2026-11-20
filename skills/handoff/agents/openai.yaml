@@ -1,0 +1,4 @@
+interface:
+  display_name: "Handoff"
+  short_description: "Prepare a brief for the next session"
+  default_prompt: "Use $handoff to summarize verified progress and the next action."

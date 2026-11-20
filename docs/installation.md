@@ -42,6 +42,20 @@ ChatGPT users can try the portable prompt fallback, which is not a native plugin
 Sources: [OpenAI packaging](https://developers.openai.com/plugins/build/plugins)
 and [submission](https://developers.openai.com/plugins/deploy/submission).
 
+## Install the pinned Claude directory edition from GitHub
+
+In a new project, run the commands below in a terminal. Keep the checkout
+available to Claude Code for this local marketplace. If the full marketplace
+is already installed, choose a separate test profile to try the other edition.
+
+```sh
+git clone --depth 1 --branch v0.4.0-claude https://github.com/sammollaei/law-firm-skills.git law-firm-skills-directory
+claude plugin marketplace add ./law-firm-skills-directory
+claude plugin install law-firm-skills@sam-mollaei --scope project
+```
+
+Restart Claude Code and try `/law-firm-skills:handoff` with fictional notes.
+
 ## One-command install
 
 Requires Node.js 22.20 or newer and a working Git installation. Check with
@@ -52,7 +66,7 @@ on October 15, 2026 and retested for v0.3.0. It is separate from these skill ins
 Open a terminal in a new or existing project directory, then choose a command:
 
 ```sh
-# Preview the 18 workflows plus setup without installing them.
+# Preview the 19 workflows plus setup without installing them.
 npx --yes skills@1.7.2 add sammollaei/law-firm-skills --list
 
 # Install morning for Claude Code in this project.
@@ -202,9 +216,9 @@ No CLI launcher, automatic provider sign-in, or account connection is included.
 
 ## Calculators
 
-The v0.3.2 Claude directory edition has no executable files. Profit-plan and
+The v0.4.0 Claude directory edition has no executable files. Profit-plan and
 scale-plan show their arithmetic in the open from each skill's calculation
-contract. The [v0.3.0 GitHub release](https://github.com/sammollaei/law-firm-skills/releases/tag/v0.3.0)
+contract. The [v0.4.0 GitHub release](https://github.com/sammollaei/law-firm-skills/releases/tag/v0.4.0)
 still includes tested Node.js 18+ calculators for those two skills. They use
 built-in modules, print JSON, and do not fetch or write data.
 

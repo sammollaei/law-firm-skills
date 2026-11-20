@@ -4,7 +4,7 @@ description: Review a law firm owner's inbox, messages, calendar, tasks, and ope
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.2"
+  version: "0.4.0"
 ---
 
 # Morning
@@ -51,7 +51,14 @@ Respect user-configured quiet hours, paused work, approval holds, and ownership.
    Reconcile uncertain delivery before trying again. Do not duplicate a send,
    payment, assignment, or completed fix.
 
-Work in manageable batches while preserving the full selected scope. One failed
+For each selected queue, follow pagination through the cutoff. Account for
+every due or overdue task, including items on later pages. Keep work due later
+today separate from overdue work. If access stops early, report the last page
+reviewed and any known outstanding count. With Todoist available, use the
+todoist workflow within the current request; a brief-only request stays
+read-only. With a supplied list, state its coverage and use the same rules.
+After an authorized change, wait for the write to finish before reading back
+the record. On a timeout, reconcile the actual record before retrying. One failed
 source should not block unrelated work, but its dependent actions remain held.
 Do not mark messages read, archive threads, move dates, or close tasks merely to
 make the brief shorter; those changes need authorization and their own readback.

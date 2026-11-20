@@ -1,6 +1,6 @@
 # Validation
 
-The v0.3.2 Claude directory edition contains Markdown, text, JSON, YAML, license,
+The v0.4.0 Claude directory edition contains Markdown, text, JSON, YAML, license,
 and PNG files only. Run strict validation from the collection root with Claude
 Code 2.1.281 or newer:
 
@@ -14,7 +14,7 @@ inputs, not the truth or completeness of real firm records.
 
 The website, release tooling, reproducible ZIP builder, and tested Node.js
 calculators are not part of this edition. They remain in the
-[v0.3.0 source](https://github.com/sammollaei/law-firm-skills/tree/v0.3.0) and on
+[v0.4.0 source](https://github.com/sammollaei/law-firm-skills/tree/v0.4.0) and on
 the main branch.
 
 Each skill README includes a fictional behavioral acceptance example. Review
@@ -26,7 +26,8 @@ test these examples.
 
 ## Host evaluation suite
 
-The `evals/` directory has 40 fictional cases: the original 31 setup and workflow cases,
+The `evals/` directory has 44 fictional cases: the original 31 setup and workflow cases,
+four v0.4.0 regressions for morning, email, watch and handoff,
 plus nine v0.3.0 regressions covering the five updated workflows, meeting-prep,
 and verify. They check source coverage, stale approvals, literal amounts,
 confidential-media boundaries, and unavailable independent review.

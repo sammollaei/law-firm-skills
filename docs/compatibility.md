@@ -1,7 +1,20 @@
 # Compatibility and evidence
 
-Documentation updated November 6, 2026. Current package: v0.3.2. A shared file format does not guarantee
+Documentation updated November 20, 2026. Current package: v0.4.0. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
+
+## v0.4.0 checks on November 20, 2026
+
+Claude Code 2.1.327 validated both editions' plugin and marketplace manifests.
+Clean project installations exposed all 20 skills. The four changed workflows
+use identical instructions across editions. On the final wording, the Claude
+directory edition passed all four native fictional cases. Codex 0.171.0 ran
+the same four cases from the full standalone installation. The answers preserved
+the human draft, covered the second task page, identified missing visual
+evidence and kept unverified publication open. An earlier Claude answer treated
+an unverified publication as unpublished, prompting a clarification and retest.
+These checks use supplied examples. Live mailbox and practice-management
+integrations, marketplace approval and real user adoption are outside their scope.
 
 | Host | Delivery route | Dated evidence (see version-specific results below) |
 |---|---|---|

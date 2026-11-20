@@ -4,7 +4,7 @@ description: Read an email thread, complete the work the user has authorized beh
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.3.2"
+  version: "0.4.0"
 ---
 
 # Email
@@ -73,7 +73,13 @@ Corrupted output does not establish its technical cause. Treat shell expansion
 as a hypothesis unless the preparation code or execution evidence confirms it.
 
 Before saving or replacing a draft, reread the conversation and current draft.
-If another person or session has changed it, reconcile those changes first.
+Identify who created or edited each draft. Preserve a person's draft regardless
+of age, including an assistant draft they later edited. Reconcile their wording
+with the latest verified facts. If authorship is unclear, give the proposed
+reply in chat. If dates or other material facts conflict across drafts, tell
+the operator which versions disagree and which source could settle it. Replace a person's draft only with their explicit authorization
+for that draft. If separately authorized drafts coexist, identify both in the
+result and tell the user which one contains the proposed reply.
 Do not overwrite a newer draft with previously approved text or bypass a
 provider conflict response by creating another copy. Approval attaches to the
 actual content and recipients, not a remembered earlier version.
