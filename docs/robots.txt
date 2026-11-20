@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sammollaei.github.io/law-firm-skills/sitemap.xml
