@@ -1,0 +1,4 @@
+interface:
+  display_name: "Weekend operations review"
+  short_description: "Prepare a weekend operations brief"
+  default_prompt: "Use $weekend with the supplied evidence and review scope."

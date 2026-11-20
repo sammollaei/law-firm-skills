@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quarterly project review"
+  short_description: "Review project outcomes and next steps"
+  default_prompt: "Use $ship-or-kill with the supplied evidence and review scope."

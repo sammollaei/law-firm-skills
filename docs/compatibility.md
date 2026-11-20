@@ -1,7 +1,21 @@
 # Compatibility and evidence
 
-Documentation updated November 20, 2026. Current package: v0.4.0. A shared file format does not guarantee
+Documentation updated November 20, 2026. Current package: v0.5.0. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
+
+## v0.5.0 checks on November 20, 2026
+
+Clean projects installed all 24 skills from both editions. Claude Code 2.1.327
+validated both manifests in each edition. The four new workflows passed all
+four native Claude fictional scenarios. Codex 0.171.0 used the full standalone
+installation on the same scenarios. Its answers distinguished shared changes
+from proven causation, left an ambiguous repair for the owner, disclosed the
+weekend sample limit and rejected an unsupported benchmark.
+
+A separate Codex repair exercise supplied an approved link target and authorized
+a single change. The original link failed, the revised link opened the expected
+local document, and only the fictional manual index changed. No live client
+records or connected business systems were used in these exercises.
 
 ## v0.4.0 checks on November 20, 2026
 
