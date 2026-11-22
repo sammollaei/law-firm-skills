@@ -25,7 +25,7 @@ ROOT_FILES = {"README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "CONTRIBUTING.md
 DOCS = {"installation.md", "configuration.md", "compatibility.md", "validation.md",
         "index.html", "styles.css", "privacy.html", "terms.html", "support.html", ".nojekyll",
         "launch-kit.md", "releases.md", "claude-submission.md",
-        "morning.html", "meeting.html", "handoff.html", "robots.txt", "sitemap.xml",
+        "morning.html", "meeting.html", "handoff.html", "robots.txt", "sitemap.xml", "CNAME",
         "preview-home.png", "preview-morning.png", "preview-meeting.png", "preview-handoff.png"}
 PREVIEWS = {f"docs/{name}" for name in (
     "preview-home.png", "preview-morning.png", "preview-meeting.png", "preview-handoff.png")}

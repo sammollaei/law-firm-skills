@@ -6,7 +6,7 @@
     "name": "Sam Mollaei",
     "url": "https://github.com/sammollaei"
   },
-  "homepage": "https://sammollaei.github.io/law-firm-skills/",
+  "homepage": "https://lawfirmskills.com/",
   "repository": "https://github.com/sammollaei/law-firm-skills",
   "license": "MIT",
   "keywords": [
@@ -16,8 +16,8 @@
   ],
   "icon": "./assets/icon.png",
   "documentationUrl": "https://github.com/sammollaei/law-firm-skills/blob/main/docs/installation.md",
-  "supportUrl": "https://sammollaei.github.io/law-firm-skills/support.html",
-  "privacyPolicyUrl": "https://sammollaei.github.io/law-firm-skills/privacy.html",
-  "termsOfServiceUrl": "https://sammollaei.github.io/law-firm-skills/terms.html",
+  "supportUrl": "https://lawfirmskills.com/support.html",
+  "privacyPolicyUrl": "https://lawfirmskills.com/privacy.html",
+  "termsOfServiceUrl": "https://lawfirmskills.com/terms.html",
   "displayName": "Law Firm Skills"
 }
