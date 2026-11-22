@@ -8,7 +8,7 @@ Version in .claude-plugin/plugin.json: 0.5.0. Select tag v0.5.0-claude for this 
 
 Match the tag's commit to the release and confirm the manifest version and
 24 skill folders: 23 workflows plus setup. Read the
-[compatibility record](compatibility.md), [privacy disclosure](https://sammollaei.github.io/law-firm-skills/privacy.html),
+[compatibility record](compatibility.md), [privacy disclosure](https://lawfirmskills.com/privacy.html),
 [README](../README.md), and [release notes](releases.md). Run strict local plugin
 validation with Claude Code 2.1.281 or newer and the documented tests. Older
 CLIs warn about five valid directory metadata fields; retain those fields.

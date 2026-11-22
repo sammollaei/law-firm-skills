@@ -13,7 +13,7 @@ with [upstream attribution](THIRD_PARTY_NOTICES.md) preserved.
 
 ## Start here
 
-Visit the [quick-start website](https://sammollaei.github.io/law-firm-skills/) for
+Visit the [quick-start website](https://lawfirmskills.com/) for
 a simple catalog, a fictional first example, and installation choices. The
 collection includes 23 substantive workflows plus an optional setup skill.
 
@@ -126,9 +126,9 @@ systems, or send approved communications. Those tools and providers handle their
 own data; the collection has no author-operated data service. Local calculator
 helpers run in the host's permitted execution environment, outside MCP servers.
 
-[Privacy](https://sammollaei.github.io/law-firm-skills/privacy.html) |
-[Support](https://sammollaei.github.io/law-firm-skills/support.html) |
-[Terms](https://sammollaei.github.io/law-firm-skills/terms.html)
+[Privacy](https://lawfirmskills.com/privacy.html) |
+[Support](https://lawfirmskills.com/support.html) |
+[Terms](https://lawfirmskills.com/terms.html)
 
 ## Make it yours
 

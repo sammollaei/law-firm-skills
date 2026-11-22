@@ -7,7 +7,7 @@
     "name": "Sam Mollaei",
     "url": "https://github.com/sammollaei"
   },
-  "homepage": "https://sammollaei.github.io/law-firm-skills/",
+  "homepage": "https://lawfirmskills.com/",
   "repository": "https://github.com/sammollaei/law-firm-skills",
   "license": "MIT",
   "keywords": [
@@ -32,10 +32,10 @@
           "Staff playbooks",
           "Decision support"
         ],
-        "websiteURL": "https://sammollaei.github.io/law-firm-skills/",
-        "supportURL": "https://sammollaei.github.io/law-firm-skills/support.html",
-        "privacyPolicyURL": "https://sammollaei.github.io/law-firm-skills/privacy.html",
-        "termsOfServiceURL": "https://sammollaei.github.io/law-firm-skills/terms.html",
+        "websiteURL": "https://lawfirmskills.com/",
+        "supportURL": "https://lawfirmskills.com/support.html",
+        "privacyPolicyURL": "https://lawfirmskills.com/privacy.html",
+        "termsOfServiceURL": "https://lawfirmskills.com/terms.html",
         "defaultPrompt": [
           "Brief me on my law firm's priorities from these updates.",
           "Turn this meeting transcript into decisions and action items.",

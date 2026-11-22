@@ -1,6 +1,6 @@
 # Share Law Firm Skills
 
-Use the [project website](https://sammollaei.github.io/law-firm-skills/) as the
+Use the [project website](https://lawfirmskills.com/) as the
 single introduction link. Use the [repository](https://github.com/sammollaei/law-firm-skills)
 for source, installation, issues, and attribution. A directory listing is not
 live until its acceptance and published URL have been verified.
@@ -10,7 +10,7 @@ live until its acceptance and published URL have been verified.
 I built 23 free AI workflows for lawyers and law firm owners. They help with
 morning briefs, meeting follow-ups, decisions, and staff playbooks. Start with
 one workflow and a fictional example. Setup and source:
-https://sammollaei.github.io/law-firm-skills/
+https://lawfirmskills.com/
 
 If you use Claude Code, run these inside Claude Code:
 
@@ -36,7 +36,7 @@ routine follow-through from decisions that need you. Start with a fictional
 example before supplying your own information.
 
 Free, open source, and published under my name, Sam Mollaei:
-https://sammollaei.github.io/law-firm-skills/
+https://lawfirmskills.com/
 
 Try one and tell me where the instructions could be clearer.
 
