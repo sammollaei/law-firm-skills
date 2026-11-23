@@ -1,5 +1,14 @@
 # Release notes
 
+## v0.5.2
+
+Claude directory edition. The directory policy does not allow a tool that
+scores or ranks a named employee, and it refused v0.5.1 for that reason.
+Evaluate-team now reports totals for a team or role group and coaching notes
+on one call or one piece of work. It no longer compares named people or
+reports results beside a name. No other skill text changed. The directory
+source is tagged v0.5.2-claude. The full edition stays at v0.5.0.
+
 ## v0.5.1
 
 Claude directory edition. Remove `composerIcon` and `logo` from the root

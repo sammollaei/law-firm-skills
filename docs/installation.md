@@ -49,7 +49,7 @@ available to Claude Code for this local marketplace. If the full marketplace
 is already installed, choose a separate test profile to try the other edition.
 
 ```sh
-git clone --depth 1 --branch v0.5.1-claude https://github.com/sammollaei/law-firm-skills.git law-firm-skills-directory
+git clone --depth 1 --branch v0.5.2-claude https://github.com/sammollaei/law-firm-skills.git law-firm-skills-directory
 claude plugin marketplace add ./law-firm-skills-directory
 claude plugin install law-firm-skills@sam-mollaei --scope project
 ```
@@ -216,7 +216,7 @@ No CLI launcher, automatic provider sign-in, or account connection is included.
 
 ## Calculators
 
-The v0.5.1 Claude directory edition has no executable files. Profit-plan and
+The v0.5.2 Claude directory edition has no executable files. Profit-plan and
 scale-plan show their arithmetic in the open from each skill's calculation
 contract. The [v0.5.0 GitHub release](https://github.com/sammollaei/law-firm-skills/releases/tag/v0.5.0)
 still includes tested Node.js 18+ calculators for those two skills. They use

@@ -92,7 +92,7 @@ skills, so check before copying or replacing a folder.
 | [todoist](skills/todoist/README.md) | Work selected tasks, verify completion, and preserve deadlines and recurrence. |
 | [blind-spot](skills/blind-spot/README.md) | Find the constraint or assumption preventing progress toward a goal. |
 | [decide](skills/decide/README.md) | Compare options fairly and explain the evidence behind a recommendation. |
-| [evaluate-team](skills/evaluate-team/README.md) | Assess role outcomes with comparable evidence and visible data gaps. |
+| [evaluate-team](skills/evaluate-team/README.md) | Review team totals with visible data gaps and coach on one piece of work; no scores or rankings of named people. |
 | [email](skills/email/README.md) | Do the authorized work behind an email and prepare a verified response. |
 | [profit-plan](skills/profit-plan/README.md) | Separate accounting profit, collected fees, and matter-cohort economics. |
 | [follow-up](skills/follow-up/README.md) | Check agreed work and prepare the specific follow-up still needed. |
@@ -149,7 +149,7 @@ page for one workflow. Keep the entire skill folder together when copying it,
 including its license and any references. This makes it possible to use one
 skill without installing the other 22.
 
-Latest release: **v0.5.1**, the Claude directory edition, with 23 workflows plus setup. See the
+Latest release: **v0.5.2**, the Claude directory edition, with 23 workflows plus setup. See the
 [release notes](docs/releases.md) and [Claude directory submission guide](docs/claude-submission.md).
 
 For maintainers: [validation and packaging](docs/validation.md),

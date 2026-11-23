@@ -4,7 +4,7 @@ description: Study documented examples of one practice, compare them with the cu
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.1"
+  version: "0.5.2"
 ---
 
 # Benchmark a practice

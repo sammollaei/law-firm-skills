@@ -1,4 +1,4 @@
 interface:
   display_name: "Review team outcomes"
-  short_description: "Assess role results with comparable evidence"
-  default_prompt: "Use $evaluate-team. Assess these role outcomes using verified results and show the evidence gaps."
+  short_description: "Team totals and coaching notes on the work"
+  default_prompt: "Use $evaluate-team. Review this team's totals using verified results and show the evidence gaps."

@@ -1,13 +1,16 @@
-# evaluate-team: Assess role outcomes fairly
+# evaluate-team: Review team results and coach on the work
 
 Read the [skill instructions](SKILL.md).
 
-v0.3.0 aligns time windows and peer coverage, counts tasks by completion date,
+v0.3.0 aligns time windows and roster coverage, counts tasks by completion date,
 and preserves the exact reviewed report during approved publication.
+
+v0.5.2 reports team totals and coaching notes on one piece of work. It does
+not score or rank named people.
 
 ## What you need
 
-Approved expectations, exact role/identity, comparable periods, and authorized outcome/QA records.
+Approved team expectations, a confirmed roster, comparable periods, and authorized outcome/QA records.
 
 ## Install or use
 
@@ -23,11 +26,11 @@ legal, personnel, or account-change authority.
 
 ## Fictional example
 
-> Use evaluate-team on fictional data. Specialist A has 18 accepted packets from 20 submitted; two await review. Specialist B has 18 accepted from 18 easier assignments. No approved target or full quality history is available. Draft an assessment.
+> Use evaluate-team on fictional data. The support team has 36 accepted packets from 38 submitted in October; two await review. In September it had 30 accepted from 30 easier assignments. No approved target or full quality history is available. Draft a team review, and a coaching note on one supplied packet.
 
 ## What a good result includes
 
-No invented target or adverse ranking. Pending review is not rejection, differing opportunity is visible, and the report remains a draft.
+Team totals only, with no score or ranking of a named person. No invented target. Pending review is not rejection, the easier September mix is visible, the coaching note covers the one packet, and the report remains a draft.
 
 This is an acceptance example, not a claim that every AI platform has been
 live tested. Check the actual output and any missing-access disclosures.

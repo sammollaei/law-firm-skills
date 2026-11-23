@@ -1,6 +1,6 @@
 # Compatibility and evidence
 
-Documentation updated November 23, 2026. Current package: v0.5.1. A shared file format does not guarantee
+Documentation updated November 23, 2026. Current package: v0.5.2. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
 
 ## v0.5.0 checks on November 20, 2026
@@ -15,6 +15,10 @@ weekend sample limit and rejected an unsupported benchmark.
 v0.5.1 removes two icon fields from the root `plugin.json` in the Claude
 directory edition and otherwise matches v0.5.0-claude. The checks above were
 run on v0.5.0 and were not repeated.
+
+v0.5.2 rewrites evaluate-team in the Claude directory edition to report team
+totals and coaching notes on one piece of work, with no score or ranking of a
+named person. Its changed scenario has not been rerun on any host.
 
 A separate Codex repair exercise supplied an approved link target and authorized
 a single change. The original link failed, the revised link opened the expected
