@@ -26,7 +26,8 @@ test these examples.
 
 ## Host evaluation suite
 
-The `evals/` directory has 48 fictional cases: the original 31 setup and workflow cases,
+The `evals/` directory has 49 fictional cases: the original 31 setup and workflow cases,
+one small-team scenario for evaluate-team,
 four v0.5.0 scenarios for the new workflows, four v0.4.0 regressions for morning, email, watch and handoff,
 plus nine v0.3.0 regressions covering the five updated workflows, meeting-prep,
 and verify. They check source coverage, stale approvals, literal amounts,
