@@ -25,7 +25,13 @@ purpose, period, timezone, scheduled availability, and applicable targets.
 Use a supervisor-confirmed roster when available. Match records to the team
 by verified identifiers and dated assignments rather than a matter's current
 owner alone. A group so small that a total would identify one person is
-reported as "too small to total", not as a figure.
+reported as "too small to total", not as a figure. Say "not reported" for
+that measure; do not also call it a partial total.
+
+Never write a count, rate or result beside a person's name, including a
+figure the requester supplied. If the request states one, do not repeat it:
+refer to "the readable records" or "the supplied facts". Names may appear
+only to confirm the roster and to say whose source could not be read.
 
 Use approved role expectations and documented team targets. If absent,
 describe observed outcomes without inventing a pass/fail benchmark. Compare
@@ -75,8 +81,10 @@ and do not order people from best to worst.
 **Coaching notes.** A coaching note covers one call or one piece of work the
 reviewer selected: what the work shows, what met the standard, what to change
 next time, and the evidence read. It describes the work, not the person's
-overall standing. Write no totals, scores or comparisons into a note, and do
-not combine notes into a profile of one person.
+overall standing. Offer a note on "one piece of work you choose", without
+saying how many pieces of work a person has. Write no totals, scores or
+comparisons into a note, and do not combine notes into a profile of one
+person.
 
 Separate measured findings, explanations to investigate, and proposed
 coaching. Propose a specific process improvement or missing-evidence check,
