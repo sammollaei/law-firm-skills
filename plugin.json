@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "law-firm-skills",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Practice-management workflows for lawyers and law firm owners: daily briefs, meeting actions, follow-ups, decisions, and staff playbooks.",
   "author": {
     "name": "Sam Mollaei",
@@ -41,9 +41,7 @@
           "Turn this meeting transcript into decisions and action items.",
           "Turn this intake process into a staff playbook."
         ],
-        "brandColor": "#153C43",
-        "composerIcon": "./assets/icon.png",
-        "logo": "./assets/icon.png"
+        "brandColor": "#153C43"
       },
       "onboardingSkill": "./skills/setup/SKILL.md",
       "publication": {

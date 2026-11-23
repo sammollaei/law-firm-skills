@@ -1,5 +1,13 @@
 # Release notes
 
+## v0.5.1
+
+Claude directory edition. Remove `composerIcon` and `logo` from the root
+`plugin.json`, because the directory refuses a settings file that names an
+image (`assets/icon.png`). The icon file and the `.claude-plugin/plugin.json`
+listing icon are unchanged, and no skill text changed. The directory source is
+tagged v0.5.1-claude. The full edition stays at v0.5.0.
+
 ## v0.5.0
 
 Adds ship-or-kill, fix, weekend and learn-from-the-best. Includes 23 workflows

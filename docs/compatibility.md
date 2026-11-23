@@ -1,6 +1,6 @@
 # Compatibility and evidence
 
-Documentation updated November 20, 2026. Current package: v0.5.0. A shared file format does not guarantee
+Documentation updated November 23, 2026. Current package: v0.5.1. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
 
 ## v0.5.0 checks on November 20, 2026
@@ -11,6 +11,10 @@ four native Claude fictional scenarios. Codex 0.171.0 used the full standalone
 installation on the same scenarios. Its answers distinguished shared changes
 from proven causation, left an ambiguous repair for the owner, disclosed the
 weekend sample limit and rejected an unsupported benchmark.
+
+v0.5.1 removes two icon fields from the root `plugin.json` in the Claude
+directory edition and otherwise matches v0.5.0-claude. The checks above were
+run on v0.5.0 and were not repeated.
 
 A separate Codex repair exercise supplied an approved link target and authorized
 a single change. The original link failed, the revised link opened the expected

@@ -4,7 +4,7 @@ description: Reconcile a law firm's accounting profit, collected fees, acquisiti
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # Profit plan

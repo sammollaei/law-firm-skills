@@ -1,6 +1,6 @@
 # Validation
 
-The v0.5.0 Claude directory edition contains Markdown, text, JSON, YAML, license,
+The v0.5.1 Claude directory edition contains Markdown, text, JSON, YAML, license,
 and PNG files only. Run strict validation from the collection root with Claude
 Code 2.1.281 or newer:
 
