@@ -8,6 +8,9 @@ and preserves the exact reviewed report during approved publication.
 v0.5.2 reports team totals and coaching notes on one piece of work. It does
 not score or rank named people.
 
+v0.5.3 never writes a count, rate or result beside a person's name, and
+reports a group too small to total as "not reported".
+
 ## What you need
 
 Approved team expectations, a confirmed roster, comparable periods, and authorized outcome/QA records.

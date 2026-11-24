@@ -4,7 +4,7 @@ description: Compare options for a lawyer or law firm owner, test pivotal assump
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Decide

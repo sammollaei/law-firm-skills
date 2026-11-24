@@ -4,7 +4,7 @@ description: Choose one operational bottleneck for a focused weekend review, che
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Weekend operations review

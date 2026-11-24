@@ -1,6 +1,6 @@
 # Compatibility and evidence
 
-Documentation updated November 23, 2026. Current package: v0.5.2. A shared file format does not guarantee
+Documentation updated November 24, 2026. Current package: v0.5.3. A shared file format does not guarantee
 identical tool access, permissions, model behavior, or task completion.
 
 ## v0.5.0 checks on November 20, 2026
@@ -19,6 +19,11 @@ run on v0.5.0 and were not repeated.
 v0.5.2 rewrites evaluate-team in the Claude directory edition to report team
 totals and coaching notes on one piece of work, with no score or ranking of a
 named person. Its changed scenario has not been rerun on any host.
+
+v0.5.3 tightens evaluate-team so no figure appears beside a person's name. On
+November 24, 2026, Claude Code 2.1.327 ran its two fictional team scenarios
+three times each and all six runs passed. Three runs is a small sample, and
+the scenarios were not run on any other host.
 
 A separate Codex repair exercise supplied an approved link target and authorized
 a single change. The original link failed, the revised link opened the expected

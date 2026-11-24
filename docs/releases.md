@@ -1,5 +1,20 @@
 # Release notes
 
+## v0.5.3
+
+Claude directory edition. Evaluate-team no longer writes a count, rate or
+result beside a person's name, including a figure the requester supplied. A
+group too small to total is "not reported" and is not also called a partial
+total. A coaching note is offered on one piece of work the reviewer chooses,
+without saying how many pieces a person has.
+
+Two fictional scenarios check the skill. The team-window scenario now uses a
+five-person team with one unreadable source and expects a partial team total.
+A new small-team scenario uses a two-person team with one unreadable source
+and expects no total and no score of a named person. No other skill text
+changed. The directory source is tagged v0.5.3-claude. The full edition stays
+at v0.5.0.
+
 ## v0.5.2
 
 Claude directory edition. The directory policy does not allow a tool that

@@ -4,7 +4,7 @@ description: Choose which projects to continue, pause or stop using a 90-day rev
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Quarterly project review

@@ -4,7 +4,7 @@ description: Audit a defined project or internal process, verify defects, repair
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Project repair review

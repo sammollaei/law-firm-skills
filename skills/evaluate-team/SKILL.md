@@ -4,7 +4,7 @@ description: Review a law firm team's results as team totals against verified ro
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Evaluate team

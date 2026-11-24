@@ -4,7 +4,7 @@ description: Turn an established law firm process, approved example, or resolved
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Playbook

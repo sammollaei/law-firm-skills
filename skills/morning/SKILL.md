@@ -4,7 +4,7 @@ description: Review a law firm owner's inbox, messages, calendar, tasks, and ope
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Morning

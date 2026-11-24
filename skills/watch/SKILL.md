@@ -4,7 +4,7 @@ description: Review a video using its transcript and visual evidence, extract us
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Watch

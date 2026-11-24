@@ -4,7 +4,7 @@ description: Prepare a short law firm meeting brief from the agenda, prior decis
 license: MIT
 metadata:
   author: Sam Mollaei
-  version: "0.5.2"
+  version: "0.5.3"
 ---
 
 # Meeting prep
